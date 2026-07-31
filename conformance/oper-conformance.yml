@@ -1,0 +1,35 @@
+generated: '2026-07-20'
+method: derived
+source: openapi/oper-api.json, https://developers.opercredits.com/#/guides, https://www.opercredits.com/compliance
+api: Oper Connect API
+standards:
+- id: oauth2
+  conforms: false
+  evidence: Authentication is HTTP bearer JWT obtained via a credentials/OTP sign-in flow
+    (POST /api/jwt/), not an OAuth 2.0 authorization-server grant.
+- id: oidc
+  conforms: false
+  evidence: No OpenID Connect discovery document was served; SSO exists per-tenant but
+    is not exposed as standards-based OIDC in the public spec.
+- id: jwt
+  conforms: true
+  evidence: securityScheme jwtAuth is HTTP bearer with bearerFormat JWT; guides confirm
+    JSON Web Tokens with access + refresh tokens.
+- id: rfc9457
+  conforms: false
+  evidence: No application/problem+json media type is declared; error responses are not
+    modeled in the OpenAPI.
+- id: pagination
+  conforms: true
+  evidence: List endpoints use page/page_size query params and a count/next/previous/results
+    envelope (Django REST Framework PageNumberPagination).
+- id: idempotency
+  conforms: false
+  evidence: No idempotency-key header is defined for unsafe methods.
+- id: fapi
+  conforms: false
+  evidence: No FAPI profile, mTLS, or DPoP is declared despite the financial domain.
+- id: gdpr
+  conforms: true
+  evidence: Guides document time-boxed anonymisation of loan-request data to conform
+    with GDPR; compliance page cites GDPR and an ISO/IEC 27001-certified program.

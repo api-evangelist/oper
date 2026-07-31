@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: generated
+source: openapi/oper-api.json
+api: Oper Connect API
+skills:
+- name: oper-create-loan-request
+  file: skills/oper-create-loan-request.md
+  description: Create a mortgage loan request and register its primary borrower.
+  operations:
+  - api_jwt_create
+  - api_loan_requests_create
+  - api_loan_requests_clients_create
+  - api_loan_requests_clients_retrieve
+- name: oper-add-offer-with-documents
+  file: skills/oper-add-offer-with-documents.md
+  description: Simulate and attach a mortgage offer and upload supporting documents.
+  operations:
+  - api_simulators_offers_create
+  - api_loan_requests_offers_create
+  - api_loan_requests_offers_list
+  - api_loan_requests_documents_create

@@ -1,0 +1,46 @@
+generated: '2026-07-20'
+method: derived
+status: candidate
+source: openapi/oper-api.json
+name: oper-connect
+description: Candidate MCP tool surface derived from the Oper Connect OpenAPI. No
+  official hosted/remote Oper MCP server was found during search; this is a proposed
+  mapping of marquee operations to MCP tools, not a published server.
+official: false
+transport: unknown
+auth:
+  type: bearer-jwt
+  note: Tools would require a tenant JWT (POST /api/jwt/) forwarded as a bearer token.
+tools:
+- name: list_loan_requests
+  operationId: api_loan_requests_list
+  method: GET
+  path: /api/loan-requests/
+- name: create_loan_request
+  operationId: api_loan_requests_create
+  method: POST
+  path: /api/loan-requests/
+- name: list_loan_request_clients
+  operationId: api_loan_requests_clients_retrieve
+  method: GET
+  path: /api/loan-requests/{loan_request_id}/clients/
+- name: add_loan_request_client
+  operationId: api_loan_requests_clients_create
+  method: POST
+  path: /api/loan-requests/{loan_request_id}/clients/
+- name: list_loan_request_offers
+  operationId: api_loan_requests_offers_list
+  method: GET
+  path: /api/loan-requests/{loan_request_id}/offers/
+- name: create_loan_request_offer
+  operationId: api_loan_requests_offers_create
+  method: POST
+  path: /api/loan-requests/{loan_request_id}/offers/
+- name: list_loan_request_documents
+  operationId: api_loan_requests_documents_list
+  method: GET
+  path: /api/loan-requests/{loan_request_id}/documents/
+- name: simulate_offer
+  operationId: api_simulators_offers_create
+  method: POST
+  path: /api/simulators/offers/

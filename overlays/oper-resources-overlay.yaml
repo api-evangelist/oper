@@ -1,0 +1,30 @@
+overlay: 1.0.0
+info:
+  title: Oper Connect Resources API - API Evangelist enhancements
+  version: 1.0.0
+x-meta:
+  generated: '2026-07-20'
+  method: generated
+  source: openapi/oper-resources.json
+  extends: openapi/oper-resources.json
+  note: Non-destructive overlay supplying identity, server, and the JWT security
+    requirement absent from the upstream spec.
+actions:
+- target: $.info
+  description: Supply missing API identity.
+  update:
+    title: Oper Connect Resources API
+    version: '1.4'
+    description: Reference and configuration lookup resources for the Oper Connect
+      platform.
+- target: $
+  description: Declare the tenant-routed production API host.
+  update:
+    servers:
+    - url: https://api.opercredits.com
+      description: Tenant-routed Oper Connect API host (requires JWT and tenant context).
+- target: $
+  description: Apply the JWT bearer scheme as the default security requirement.
+  update:
+    security:
+    - jwtAuth: []

@@ -1,9 +1,27 @@
 aid: oper
 name: Oper
-description: 'Oper is a company surfaced as a portfolio company of bessemer-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: vertical-software. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'Oper (Oper Credits) is a Belgium-based fintech that provides digital mortgage
+  origination software for banks, lenders, brokers and insurers. Its modular Oper Connect
+  platform connects every stakeholder in the mortgage value chain, and its Herman AI
+  underwriting agent automates document classification, data extraction, verification
+  and credit-policy application to shorten time-to-decision. The Oper Connect API is a
+  JWT-authenticated REST API (Django REST Framework style) exposing loan requests, clients,
+  offers, financial plans, documents and hundreds of configuration resources, plus a
+  versioned Loan Request Webhook API for pushing loan events to lender systems.'
 url: https://raw.githubusercontent.com/api-evangelist/oper/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://developers.opercredits.com/assets/logo-white.svg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,16 +30,692 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Vertical Software
-apis: []
+- Fintech
+- Mortgage
+- Lending
+- Loan Origination
+- Digital Mortgage
+- Underwriting
+- Financial Services
+apis:
+- aid: oper:oper-agent-documents-api
+  name: Oper Agent Documents API
+  description: The Agent Documents API from Oper — 2 operation(s) for agent documents.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Agent Documents
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-agent-documents-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-appointment-booking-websites-api
+  name: Oper Appointment Booking Websites API
+  description: >-
+    The Appointment Booking Websites API from Oper — 2 operation(s) for appointment booking websites.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Appointment Booking Websites
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-appointment-booking-websites-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-approvals-api
+  name: Oper Approvals API
+  description: The Approvals API from Oper — 6 operation(s) for approvals.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Approvals
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-approvals-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-bank-release-policy-api
+  name: Oper Bank Release Policy API
+  description: The Bank Release Policy API from Oper — 1 operation(s) for bank release policy.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Bank Release Policy
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-bank-release-policy-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-base-products-api
+  name: Oper Base Products API
+  description: The Base Products API from Oper — 12 operation(s) for base products.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Base Products
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-base-products-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-calculate-api
+  name: Oper Calculate API
+  description: The Calculate API from Oper — 7 operation(s) for calculate.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Calculate
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-calculate-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-check-invite-token-api
+  name: Oper Check Invite Token API
+  description: The Check Invite Token API from Oper — 1 operation(s) for check invite token.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Check Invite Token
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-check-invite-token-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-check-reset-password-api
+  name: Oper Check Reset Password API
+  description: The Check Reset Password API from Oper — 1 operation(s) for check reset password.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Check Reset Password
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-check-reset-password-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-client-users-api
+  name: Oper Client Users API
+  description: The Client Users API from Oper — 2 operation(s) for client users.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Client Users
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-client-users-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-clients-api
+  name: Oper Clients API
+  description: The Clients API from Oper — 2 operation(s) for clients.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Clients
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-clients-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-commissions-api
+  name: Oper Commissions API
+  description: The Commissions API from Oper — 8 operation(s) for commissions.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Commissions
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-commissions-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-communication-history-api
+  name: Oper Communication History API
+  description: The Communication History API from Oper — 2 operation(s) for communication history.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Communication History
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-communication-history-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-connective-api
+  name: Oper Connective API
+  description: The Connective API from Oper — 2 operation(s) for connective.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Connective
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-connective-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-contact-advisor-api
+  name: Oper Contact Advisor API
+  description: The Contact Advisor API from Oper — 1 operation(s) for contact advisor.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Contact Advisor
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-contact-advisor-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-contact-api
+  name: Oper Contact API
+  description: The Contact API from Oper — 1 operation(s) for contact.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Contact
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-contact-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-contact-policy-api
+  name: Oper Contact Policy API
+  description: The Contact Policy API from Oper — 1 operation(s) for contact policy.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Contact Policy
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-contact-policy-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-credit-providers-api
+  name: Oper Credit Providers API
+  description: The Credit Providers API from Oper — 1 operation(s) for credit providers.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Credit Providers
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-credit-providers-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-documentation-library-api
+  name: Oper Documentation Library API
+  description: The Documentation Library API from Oper — 4 operation(s) for documentation library.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Documentation Library
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-documentation-library-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-documents-api
+  name: Oper Documents API
+  description: The Documents API from Oper — 2 operation(s) for documents.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Documents
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-documents-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-easy-audit-api
+  name: Oper Easy Audit API
+  description: The Easy Audit API from Oper — 1 operation(s) for easy audit.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Easy Audit
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-easy-audit-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-forgot-password-api
+  name: Oper Forgot Password API
+  description: The Forgot Password API from Oper — 1 operation(s) for forgot password.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Forgot Password
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-forgot-password-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-gdpr-policy-api
+  name: Oper Gdpr Policy API
+  description: The Gdpr Policy API from Oper — 1 operation(s) for gdpr policy.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Gdpr Policy
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-gdpr-policy-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-health-api
+  name: Oper Health API
+  description: The Health API from Oper — 1 operation(s) for health.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Health
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-health-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-integrations-api
+  name: Oper Integrations API
+  description: The Integrations API from Oper — 2 operation(s) for integrations.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Integrations
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-integrations-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-internaldocuments-api
+  name: Oper Internaldocuments API
+  description: The Internaldocuments API from Oper — 3 operation(s) for internaldocuments.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Internaldocuments
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-internaldocuments-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-jwt-api
+  name: Oper Jwt API
+  description: The Jwt API from Oper — 2 operation(s) for jwt.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Jwt
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-jwt-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-legal-links-api
+  name: Oper Legal Links API
+  description: The Legal Links API from Oper — 2 operation(s) for legal links.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Legal Links
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-legal-links-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-library-api
+  name: Oper Library API
+  description: The Library API from Oper — 2 operation(s) for library.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Library
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-library-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-loan-requests-api
+  name: Oper Loan Requests API
+  description: The Loan Requests API from Oper — 113 operation(s) for loan requests.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Loan Requests
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-loan-requests-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-loan-requests-client-info-api
+  name: Oper Loan Requests Client Info API
+  description: >-
+    The Loan Requests Client Info API from Oper — 1 operation(s) for loan requests client info.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Loan Requests Client Info
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-loan-requests-client-info-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-main-api
+  name: Oper Main API
+  description: The Main API from Oper — 30 operation(s) for main.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Main
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-main-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-me-api
+  name: Oper Me API
+  description: The Me API from Oper — 8 operation(s) for me.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Me
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-me-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-metrics-api
+  name: Oper Metrics API
+  description: The Metrics API from Oper — 1 operation(s) for metrics.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Metrics
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-metrics-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-model-fields-api
+  name: Oper Model Fields API
+  description: The Model Fields API from Oper — 1 operation(s) for model fields.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Model Fields
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-model-fields-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-pricing-api
+  name: Oper Pricing API
+  description: The Pricing API from Oper — 1 operation(s) for pricing.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Pricing
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-pricing-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-privacy-policy-api
+  name: Oper Privacy Policy API
+  description: The Privacy Policy API from Oper — 1 operation(s) for privacy policy.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Privacy Policy
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-privacy-policy-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-products-api
+  name: Oper Products API
+  description: The Products API from Oper — 1 operation(s) for products.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Products
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-products-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-reset-password-api
+  name: Oper Reset Password API
+  description: The Reset Password API from Oper — 1 operation(s) for reset password.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Reset Password
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-reset-password-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-resources-api
+  name: Oper Resources API
+  description: The Resources API from Oper — 332 operation(s) for resources.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Resources
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-resources-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-send-generic-email-api
+  name: Oper Send Generic Email API
+  description: The Send Generic Email API from Oper — 1 operation(s) for send generic email.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Send Generic Email
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-send-generic-email-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-sign-in-api
+  name: Oper Sign In API
+  description: The Sign In API from Oper — 4 operation(s) for sign in.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Sign In
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-sign-in-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-sign-up-api
+  name: Oper Sign Up API
+  description: The Sign Up API from Oper — 4 operation(s) for sign up.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Sign Up
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-sign-up-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-simulators-api
+  name: Oper Simulators API
+  description: The Simulators API from Oper — 15 operation(s) for simulators.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Simulators
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-simulators-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-sso-api
+  name: Oper Sso API
+  description: The Sso API from Oper — 2 operation(s) for sso.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Sso
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-sso-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-tasks-api
+  name: Oper Tasks API
+  description: The Tasks API from Oper — 2 operation(s) for tasks.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Tasks
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-tasks-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-terms-and-conditions-api
+  name: Oper Terms And Conditions API
+  description: The Terms And Conditions API from Oper — 1 operation(s) for terms and conditions.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Terms And Conditions
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-terms-and-conditions-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-third-parties-api
+  name: Oper Third Parties API
+  description: The Third Parties API from Oper — 20 operation(s) for third parties.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Third Parties
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-third-parties-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-third-party-api-api
+  name: Oper Third Party Api API
+  description: The Third Party Api API from Oper — 1 operation(s) for third party api.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Third Party Api
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-third-party-api-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-user-management-api
+  name: Oper User Management API
+  description: The User Management API from Oper — 4 operation(s) for user management.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - User Management
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-user-management-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-users-api
+  name: Oper Users API
+  description: The Users API from Oper — 1 operation(s) for users.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Users
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-users-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-validators-api
+  name: Oper Validators API
+  description: The Validators API from Oper — 1 operation(s) for validators.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Validators
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-validators-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
+- aid: oper:oper-webhooks-api
+  name: Oper Webhooks API
+  description: Your Webhooks tag description
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Webhooks
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-webhooks-api-openapi.yml
+  - type: Webhooks
+    url: openapi/oper-loan-request-webhook.json
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 18
+  pass: local-v1
 common:
 - type: Website
   url: https://www.opercredits.com/
+- type: DeveloperPortal
+  url: https://developers.opercredits.com/
+- type: Documentation
+  url: https://developers.opercredits.com/#/guides
+- type: APIReference
+  url: https://developers.opercredits.com/#/api
+- type: GettingStarted
+  url: https://developers.opercredits.com/#/guides
+- type: Blog
+  url: https://www.opercredits.com/blog
+- type: Support
+  url: https://www.opercredits.com/contact
+- type: TermsOfService
+  url: https://www.opercredits.com/legal
+- type: Compliance
+  url: https://www.opercredits.com/compliance
+- type: Security
+  url: https://www.opercredits.com/reporting-a-security-issue
+- type: Authentication
+  url: authentication/oper-authentication.yml
+- type: Conventions
+  url: conventions/oper-conventions.yml
+- type: Conformance
+  url: conformance/oper-conformance.yml
+- type: Lifecycle
+  url: lifecycle/oper-lifecycle.yml
+- type: DomainSecurity
+  url: security/oper-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/oper-vulnerability-disclosure.yml
+- type: TrustCenter
+  url: security/oper-trust-center.yml
+- type: LLMsTxt
+  url: llms/oper-llms.txt
+- type: MCPServer
+  url: mcp/oper-mcp.yml
+- type: AgentSkill
+  url: skills/_index.yml

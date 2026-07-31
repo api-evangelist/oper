@@ -1,0 +1,35 @@
+overlay: 1.0.0
+info:
+  title: Oper Connect API - API Evangelist enhancements
+  version: 1.0.0
+x-meta:
+  generated: '2026-07-20'
+  method: generated
+  source: openapi/oper-api.json
+  extends: openapi/oper-api.json
+  note: Non-destructive overlay. The upstream spec ships with an empty info block and
+    no servers; this overlay supplies identity and the JWT security context observed
+    in the developer portal without mutating the original file.
+actions:
+- target: $.info
+  description: Supply missing API identity.
+  update:
+    title: Oper Connect API
+    version: '1.4'
+    description: JWT-authenticated REST API for digital mortgage origination (loan
+      requests, clients, offers, financial plans, documents, approvals).
+    contact:
+      name: Oper Security & Support
+      email: security@opercredits.com
+      url: https://developers.opercredits.com/
+- target: $
+  description: Declare the tenant-routed production API host.
+  update:
+    servers:
+    - url: https://api.opercredits.com
+      description: Tenant-routed Oper Connect API host (requires JWT and tenant context).
+- target: $
+  description: Apply the JWT bearer scheme as the default security requirement.
+  update:
+    security:
+    - jwtAuth: []

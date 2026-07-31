@@ -1,0 +1,51 @@
+generated: '2026-07-20'
+method: derived
+source: openapi/oper-api.json, openapi/oper-resources.json, https://developers.opercredits.com/#/guides
+api: Oper Connect API
+authentication:
+  style: bearer-jwt
+  scheme: jwtAuth (HTTP bearer, JWT)
+  token_endpoint: POST /api/jwt/
+  refresh_endpoint: POST /api/jwt/refresh/
+  otp:
+    supported: true
+    note: Some tenants (e.g. Fundamenta) require an OTP code sent to the user's phone
+      in addition to credentials via /api/sign-in/otp/ and /api/sign-in/verify/.
+  token_lifetime: limited; access tokens must be refreshed with the refresh token
+  detail: authentication/oper-authentication.yml
+idempotency:
+  supported: false
+  note: No idempotency-key header is documented in the OpenAPI; writes are not declared
+    idempotent.
+pagination:
+  style: page-number
+  params:
+  - page
+  - page_size
+  response_fields:
+  - count
+  - next
+  - previous
+  - results
+  note: Django REST Framework PageNumberPagination style envelope.
+sorting:
+  supported: true
+  param: ordering
+filtering:
+  supported: true
+  note: List endpoints expose resource-specific query filters (e.g. loan_request, owner,
+    created_date_start/created_date_end, is_active).
+versioning:
+  api: URL/path-scoped; specs published under /specs/1.4/
+  webhooks: explicit versions 1.0, 1.1, 1.2, 1.3 (stable), 1.4 (beta)
+  detail: lifecycle/oper-lifecycle.yml
+error_envelope:
+  format: unspecified
+  note: OpenAPI declares only 2xx responses (200/201/204); error payload shape is not
+    documented in the machine-readable spec.
+  detail: none
+rate_limiting:
+  signaling: undocumented
+data_privacy:
+  note: Loan-request data is anonymised after a tenant-configured retention period to
+    conform with GDPR.
