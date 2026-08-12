@@ -53,7 +53,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-agent-documents-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-appointment-booking-websites-api
   name: Oper Appointment Booking Websites API
   description: >-
@@ -66,7 +66,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-appointment-booking-websites-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-approvals-api
   name: Oper Approvals API
   description: The Approvals API from Oper — 6 operation(s) for approvals.
@@ -78,7 +78,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-approvals-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-bank-release-policy-api
   name: Oper Bank Release Policy API
   description: The Bank Release Policy API from Oper — 1 operation(s) for bank release policy.
@@ -90,7 +90,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-bank-release-policy-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-base-products-api
   name: Oper Base Products API
   description: The Base Products API from Oper — 12 operation(s) for base products.
@@ -102,7 +102,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-base-products-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-calculate-api
   name: Oper Calculate API
   description: The Calculate API from Oper — 7 operation(s) for calculate.
@@ -114,7 +114,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-calculate-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-check-invite-token-api
   name: Oper Check Invite Token API
   description: The Check Invite Token API from Oper — 1 operation(s) for check invite token.
@@ -126,7 +126,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-check-invite-token-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-check-reset-password-api
   name: Oper Check Reset Password API
   description: The Check Reset Password API from Oper — 1 operation(s) for check reset password.
@@ -138,7 +138,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-check-reset-password-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-client-users-api
   name: Oper Client Users API
   description: The Client Users API from Oper — 2 operation(s) for client users.
@@ -150,7 +150,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-client-users-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-clients-api
   name: Oper Clients API
   description: The Clients API from Oper — 2 operation(s) for clients.
@@ -162,7 +162,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-clients-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-commissions-api
   name: Oper Commissions API
   description: The Commissions API from Oper — 8 operation(s) for commissions.
@@ -174,7 +174,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-commissions-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-communication-history-api
   name: Oper Communication History API
   description: The Communication History API from Oper — 2 operation(s) for communication history.
@@ -186,7 +186,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-communication-history-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-connective-api
   name: Oper Connective API
   description: The Connective API from Oper — 2 operation(s) for connective.
@@ -198,7 +198,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-connective-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-contact-advisor-api
   name: Oper Contact Advisor API
   description: The Contact Advisor API from Oper — 1 operation(s) for contact advisor.
@@ -210,7 +210,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-contact-advisor-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-contact-api
   name: Oper Contact API
   description: The Contact API from Oper — 1 operation(s) for contact.
@@ -222,7 +222,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-contact-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-contact-policy-api
   name: Oper Contact Policy API
   description: The Contact Policy API from Oper — 1 operation(s) for contact policy.
@@ -234,7 +234,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-contact-policy-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-credit-providers-api
   name: Oper Credit Providers API
   description: The Credit Providers API from Oper — 1 operation(s) for credit providers.
@@ -246,7 +246,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-credit-providers-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-documentation-library-api
   name: Oper Documentation Library API
   description: The Documentation Library API from Oper — 4 operation(s) for documentation library.
@@ -258,7 +258,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-documentation-library-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-documents-api
   name: Oper Documents API
   description: The Documents API from Oper — 2 operation(s) for documents.
@@ -270,7 +270,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-documents-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-easy-audit-api
   name: Oper Easy Audit API
   description: The Easy Audit API from Oper — 1 operation(s) for easy audit.
@@ -282,7 +282,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-easy-audit-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-forgot-password-api
   name: Oper Forgot Password API
   description: The Forgot Password API from Oper — 1 operation(s) for forgot password.
@@ -294,7 +294,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-forgot-password-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-gdpr-policy-api
   name: Oper Gdpr Policy API
   description: The Gdpr Policy API from Oper — 1 operation(s) for gdpr policy.
@@ -306,7 +306,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-gdpr-policy-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-health-api
   name: Oper Health API
   description: The Health API from Oper — 1 operation(s) for health.
@@ -318,7 +318,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-health-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-integrations-api
   name: Oper Integrations API
   description: The Integrations API from Oper — 2 operation(s) for integrations.
@@ -330,7 +330,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-integrations-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-internaldocuments-api
   name: Oper Internaldocuments API
   description: The Internaldocuments API from Oper — 3 operation(s) for internaldocuments.
@@ -342,7 +342,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-internaldocuments-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-jwt-api
   name: Oper Jwt API
   description: The Jwt API from Oper — 2 operation(s) for jwt.
@@ -354,7 +354,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-jwt-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-legal-links-api
   name: Oper Legal Links API
   description: The Legal Links API from Oper — 2 operation(s) for legal links.
@@ -366,7 +366,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-legal-links-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-library-api
   name: Oper Library API
   description: The Library API from Oper — 2 operation(s) for library.
@@ -378,7 +378,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-library-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-loan-requests-api
   name: Oper Loan Requests API
   description: The Loan Requests API from Oper — 113 operation(s) for loan requests.
@@ -390,7 +390,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-loan-requests-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-loan-requests-client-info-api
   name: Oper Loan Requests Client Info API
   description: >-
@@ -403,7 +403,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-loan-requests-client-info-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-main-api
   name: Oper Main API
   description: The Main API from Oper — 30 operation(s) for main.
@@ -415,7 +415,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-main-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-me-api
   name: Oper Me API
   description: The Me API from Oper — 8 operation(s) for me.
@@ -427,7 +427,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-me-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-metrics-api
   name: Oper Metrics API
   description: The Metrics API from Oper — 1 operation(s) for metrics.
@@ -439,7 +439,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-metrics-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-model-fields-api
   name: Oper Model Fields API
   description: The Model Fields API from Oper — 1 operation(s) for model fields.
@@ -451,7 +451,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-model-fields-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-pricing-api
   name: Oper Pricing API
   description: The Pricing API from Oper — 1 operation(s) for pricing.
@@ -463,7 +463,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-pricing-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-privacy-policy-api
   name: Oper Privacy Policy API
   description: The Privacy Policy API from Oper — 1 operation(s) for privacy policy.
@@ -475,7 +475,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-privacy-policy-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-products-api
   name: Oper Products API
   description: The Products API from Oper — 1 operation(s) for products.
@@ -487,7 +487,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-products-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-reset-password-api
   name: Oper Reset Password API
   description: The Reset Password API from Oper — 1 operation(s) for reset password.
@@ -499,7 +499,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-reset-password-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-resources-api
   name: Oper Resources API
   description: The Resources API from Oper — 332 operation(s) for resources.
@@ -511,7 +511,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-resources-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-send-generic-email-api
   name: Oper Send Generic Email API
   description: The Send Generic Email API from Oper — 1 operation(s) for send generic email.
@@ -523,7 +523,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-send-generic-email-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-sign-in-api
   name: Oper Sign In API
   description: The Sign In API from Oper — 4 operation(s) for sign in.
@@ -535,7 +535,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-sign-in-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-sign-up-api
   name: Oper Sign Up API
   description: The Sign Up API from Oper — 4 operation(s) for sign up.
@@ -547,7 +547,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-sign-up-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-simulators-api
   name: Oper Simulators API
   description: The Simulators API from Oper — 15 operation(s) for simulators.
@@ -559,7 +559,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-simulators-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-sso-api
   name: Oper Sso API
   description: The Sso API from Oper — 2 operation(s) for sso.
@@ -571,7 +571,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-sso-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-tasks-api
   name: Oper Tasks API
   description: The Tasks API from Oper — 2 operation(s) for tasks.
@@ -583,7 +583,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-tasks-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-terms-and-conditions-api
   name: Oper Terms And Conditions API
   description: The Terms And Conditions API from Oper — 1 operation(s) for terms and conditions.
@@ -595,7 +595,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-terms-and-conditions-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-third-parties-api
   name: Oper Third Parties API
   description: The Third Parties API from Oper — 20 operation(s) for third parties.
@@ -607,7 +607,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-third-parties-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-third-party-api-api
   name: Oper Third Party Api API
   description: The Third Party Api API from Oper — 1 operation(s) for third party api.
@@ -619,7 +619,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-third-party-api-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-user-management-api
   name: Oper User Management API
   description: The User Management API from Oper — 4 operation(s) for user management.
@@ -631,7 +631,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-user-management-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-users-api
   name: Oper Users API
   description: The Users API from Oper — 1 operation(s) for users.
@@ -643,7 +643,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-users-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-validators-api
   name: Oper Validators API
   description: The Validators API from Oper — 1 operation(s) for validators.
@@ -655,7 +655,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-validators-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-webhooks-api
   name: Oper Webhooks API
   description: Your Webhooks tag description
@@ -667,7 +667,7 @@ apis:
   - type: OpenAPI
     url: openapi/oper-webhooks-api-openapi.yml
   - type: Webhooks
-    url: openapi/oper-loan-request-webhook.json
+    url: openapi/_original/oper-loan-request-webhook.json
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -679,6 +679,8 @@ x-enrichment:
   artifacts_added: 18
   pass: local-v1
 common:
+- type: Overlay
+  url: overlays/oper-api-overlay.yaml
 - type: Website
   url: https://www.opercredits.com/
 - type: DeveloperPortal
