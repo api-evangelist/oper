@@ -1,0 +1,118 @@
+{
+  "item": [
+    {
+      "id": "09ade1ae-607e-460c-9233-e73b8fd5ec0f",
+      "name": "Gdpr Policy",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "489c8d11-3195-40af-b0ab-0ae32be9ef56",
+          "name": "api gdpr policy retrieve",
+          "request": {
+            "name": "api gdpr policy retrieve",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "gdpr-policy",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "b88e5e87-7f95-4589-a970-5e4f16b72858",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "gdpr-policy",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"content\": \"string\",\n  \"language\": {\n    \"definition\": \"string\",\n    \"id\": 2061,\n    \"order\": 9903\n  },\n  \"title\": \"string\",\n  \"configuration_id\": \"127ce232-a6ab-b770-2e89-43c92fab01b6\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "/",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "8e81ea2e-6b0b-4398-a959-f5b07a52eb8d",
+    "name": "Oper Agent Documents Gdpr Policy API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "item": [
+    {
+      "id": "465cfed8-a445-487f-b793-e452c9fe0da8",
+      "name": "Contact Advisor",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "b58d15c2-c206-4413-8c57-aad8e9cb52ef",
+          "name": "api contact advisor create",
+          "request": {
+            "name": "api contact advisor create",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "contact-advisor",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "first_name",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "last_name",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "availability",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "calculations",
+                  "value": "{\"additional_costs\":\"<double>\",\"ammortisation_per_year\":\"<double>\",\"interest_per_year\":\"<double>\",\"interest_rate\":\"<double>\",\"monthly_amount\":\"<double>\",\"portability\":\"<double>\",\"yearly_amount\":\"<double>\"}"
+                },
+                {
+                  "disabled": false,
+                  "key": "calculations",
+                  "value": "{\"additional_costs\":\"<double>\",\"ammortisation_per_year\":\"<double>\",\"interest_per_year\":\"<double>\",\"interest_rate\":\"<double>\",\"monthly_amount\":\"<double>\",\"portability\":\"<double>\",\"yearly_amount\":\"<double>\"}"
+                },
+                {
+                  "disabled": false,
+                  "key": "comment",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "customer_nr",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "date_of_birth",
+                  "value": "<date>"
+                },
+                {
+                  "disabled": false,
+                  "key": "email",
+                  "value": "<email>"
+                },
+                {
+                  "disabled": false,
+                  "key": "household_income",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "loan_amount",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "own_funds",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "phone_number",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "realty_price",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "salutation",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "street",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "zip_code",
+                  "value": "<string>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "6f6c4d50-ce07-4792-a552-3c5296ed335b",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "contact-advisor",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "first_name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "last_name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "availability",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "calculations",
+                      "value": "{\"additional_costs\":\"<double>\",\"ammortisation_per_year\":\"<double>\",\"interest_per_year\":\"<double>\",\"interest_rate\":\"<double>\",\"monthly_amount\":\"<double>\",\"portability\":\"<double>\",\"yearly_amount\":\"<double>\"}"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "calculations",
+                      "value": "{\"additional_costs\":\"<double>\",\"ammortisation_per_year\":\"<double>\",\"interest_per_year\":\"<double>\",\"interest_rate\":\"<double>\",\"monthly_amount\":\"<double>\",\"portability\":\"<double>\",\"yearly_amount\":\"<double>\"}"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "comment",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "customer_nr",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "date_of_birth",
+                      "value": "<date>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "email",
+                      "value": "<email>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "household_income",
+                      "value": "<double>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "loan_amount",
+                      "value": "<double>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "own_funds",
+                      "value": "<double>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "phone_number",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "realty_price",
+                      "value": "<double>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "salutation",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "street",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "zip_code",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"first_name\": \"<string>\",\n  \"last_name\": \"<string>\",\n  \"availability\": \"<string>\",\n  \"calculations\": [\n    {\n      \"additional_costs\": \"<double>\",\n      \"ammortisation_per_year\": \"<double>\",\n      \"interest_per_year\": \"<double>\",\n      \"interest_rate\": \"<double>\",\n      \"monthly_amount\": \"<double>\",\n      \"portability\": \"<double>\",\n      \"yearly_amount\": \"<double>\"\n    },\n    {\n      \"additional_costs\": \"<double>\",\n      \"ammortisation_per_year\": \"<double>\",\n      \"interest_per_year\": \"<double>\",\n      \"interest_rate\": \"<double>\",\n      \"monthly_amount\": \"<double>\",\n      \"portability\": \"<double>\",\n      \"yearly_amount\": \"<double>\"\n    }\n  ],\n  \"comment\": \"<string>\",\n  \"customer_nr\": \"<string>\",\n  \"date_of_birth\": \"<date>\",\n  \"email\": \"<email>\",\n  \"household_income\": \"<double>\",\n  \"loan_amount\": \"<double>\",\n  \"own_funds\": \"<double>\",\n  \"phone_number\": \"<string>\",\n  \"realty_price\": \"<double>\",\n  \"salutation\": \"<string>\",\n  \"street\": \"<string>\",\n  \"zip_code\": \"<string>\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "/",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "bfa66723-70d1-45a9-9343-0e31cdf44e3b",
+    "name": "Oper Agent Documents Contact Advisor API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

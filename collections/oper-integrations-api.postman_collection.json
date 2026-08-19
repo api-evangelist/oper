@@ -1,0 +1,237 @@
+{
+  "item": [
+    {
+      "id": "550d5f2d-1cf5-4000-9405-ad7f22f75614",
+      "name": "Integrations",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "af4bbbf9-743f-4b07-ac1b-6660144c00f0",
+          "name": "api integrations allowed integrators list",
+          "request": {
+            "name": "api integrations allowed integrators list",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "integrations",
+                "allowed-integrators",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "integrator_type",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "53dc54fa-ec04-464c-9f7c-089835a6e5f5",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "integrations",
+                    "allowed-integrators",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "integrator_type",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"documents_push_email\": \"p5N@BWPjUDFZJpePvYpPmnMSrxXjmxztXKRg.tkxu\",\n    \"external_url\": \"https://KkusiugZKjyWq.ffzAy7b2lJzwCS5J97BVZIC-O89UGAdMyrM-Q\",\n    \"id\": 625,\n    \"integrator_type\": 129,\n    \"name\": \"string\",\n    \"number_of_transfer_rounds\": 7894,\n    \"version\": \"\",\n    \"webhook\": 3000,\n    \"credit_provider\": 7587\n  },\n  {\n    \"documents_push_email\": \"pb4LkkY@DpfZaptRuuIIQsuVjMmbnIhGTalTG.dumw\",\n    \"external_url\": \"https://ipbUVOSUSMJmW.rsyriYYOggUbeFQhoAcv4aO1.pFBbGjeHGBMY76Hxps3Lvn,JGIriVrxv6P\",\n    \"id\": 8950,\n    \"integrator_type\": 8594,\n    \"name\": \"string\",\n    \"number_of_transfer_rounds\": 6415,\n    \"version\": \"\",\n    \"webhook\": 2209,\n    \"credit_provider\": 8880\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "5249f636-2e43-4172-b580-681161b884d1",
+          "name": "api integrations allowed integrators retrieve",
+          "request": {
+            "name": "api integrations allowed integrators retrieve",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "integrations",
+                "allowed-integrators",
+                ":id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) A unique integer value identifying this Integrator."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "9f4e53f4-6f89-41b3-a920-a45b7f8a4501",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "integrations",
+                    "allowed-integrators",
+                    ":id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) A unique integer value identifying this Integrator."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"documents_push_email\": \"vmE8KbqYMbw@JnBCJwnggpl.evq\",\n  \"external_url\": \"http://lvuHVjwVbHizNnrdDw.ayuVvDR-qtCtdPWP49wrDAAqMOLV7ZFT5AVW5eAdhILi,3LAhWfTOT+esQQXwlY+epGN-box1EvCCTJ9ob,\",\n  \"id\": 627,\n  \"integrator_type\": 2103,\n  \"name\": \"string\",\n  \"number_of_transfer_rounds\": 7353,\n  \"version\": \"\",\n  \"webhook\": 9752,\n  \"credit_provider\": 3871\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "/",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "07afc213-d6af-4ff9-b17b-d0c57038998b",
+    "name": "Oper Agent Documents Integrations API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

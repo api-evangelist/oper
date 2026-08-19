@@ -3,9 +3,9 @@ method: derived
 status: candidate
 source: openapi/oper-api.json
 name: oper-connect
-description: Candidate MCP tool surface derived from the Oper Connect OpenAPI. No
-  official hosted/remote Oper MCP server was found during search; this is a proposed
-  mapping of marquee operations to MCP tools, not a published server.
+description: Candidate MCP tool surface derived from the Oper Connect OpenAPI. No official hosted/remote
+  Oper MCP server was found during search; this is a proposed mapping of marquee operations to MCP tools,
+  not a published server.
 official: false
 transport: unknown
 auth:
@@ -44,3 +44,9 @@ tools:
   operationId: api_simulators_offers_create
   method: POST
   path: /api/simulators/offers/
+deployment:
+  mode: none
+  verified: derived
+  tools: 8
+  checked: '2026-08-12'
+  source: catalog MCP census

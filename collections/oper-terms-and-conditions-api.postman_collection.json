@@ -1,0 +1,118 @@
+{
+  "item": [
+    {
+      "id": "ad2c5d91-1808-470f-a9d0-3f3a6ce460e2",
+      "name": "Terms And Conditions",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "f5366175-21d2-4253-8b00-d74fd4a68199",
+          "name": "api terms and conditions retrieve",
+          "request": {
+            "name": "api terms and conditions retrieve",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "terms-and-conditions",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "8a2d9d07-84ab-41e2-afae-601b78402577",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "terms-and-conditions",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"content\": \"string\",\n  \"language\": {\n    \"definition\": \"string\",\n    \"id\": 9396,\n    \"order\": 4575\n  },\n  \"title\": \"string\",\n  \"configuration_id\": \"50c6211b-e8f7-1d1c-a4b1-de80eb1389be\",\n  \"tenant\": 1738\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "/",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "282ebe12-022b-49cf-8169-5d7eab1e04d5",
+    "name": "Oper Agent Documents Terms And Conditions API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

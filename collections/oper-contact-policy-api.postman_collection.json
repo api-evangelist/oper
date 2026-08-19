@@ -1,0 +1,118 @@
+{
+  "item": [
+    {
+      "id": "e62aeb0a-587f-4998-ae92-9da277af4310",
+      "name": "Contact Policy",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "eea2a327-4408-4816-983e-7977bc324f96",
+          "name": "api contact policy retrieve",
+          "request": {
+            "name": "api contact policy retrieve",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "contact-policy",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "503c16e4-cd61-46ad-a594-7ae0e16a4396",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "contact-policy",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"content\": \"string\",\n  \"language\": {\n    \"definition\": \"string\",\n    \"id\": 386,\n    \"order\": 3891\n  },\n  \"title\": \"string\",\n  \"configuration_id\": \"26a5a542-65f1-8f5f-a84e-6382fa6deb56\",\n  \"tenant\": 6796\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "/",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "9b6eaa8c-e004-4632-ba32-f8ee7056303f",
+    "name": "Oper Agent Documents Contact Policy API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,788 @@
+{
+  "item": [
+    {
+      "id": "cc963bee-8a81-404e-a8f5-3574be3f9f21",
+      "name": "Approvals",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "8eaec4b6-8640-4f96-8e4c-b5659d4d4085",
+          "name": "api approvals action availability create",
+          "request": {
+            "name": "api approvals action availability create",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "approvals",
+                "action-availability",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "b57b30af-e0c3-4b05-b832-e12526eeecfc",
+              "name": "No response body",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "approvals",
+                    "action-availability",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7f4cf21b-6daf-4122-aca6-8d3b25511053",
+          "name": "api approvals audit bundles list",
+          "request": {
+            "name": "api approvals audit bundles list",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "approvals",
+                "audit",
+                "bundles",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "action_type",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "credit_provider_id",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "from_date",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "host_id",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "host_kind",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "to_date",
+                  "value": "<dateTime>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "518df8a0-e761-40da-8bb0-620019bbba4c",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "approvals",
+                    "audit",
+                    "bundles",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "action_type",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "credit_provider_id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "from_date",
+                      "value": "<dateTime>"
+                    },
+                    {
+                      "key": "host_id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "host_kind",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "to_date",
+                      "value": "<dateTime>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"action_type\": {\n      \"definition\": \"string\",\n      \"id\": 7481,\n      \"order\": 8556\n    },\n    \"bundle_id\": 3369,\n    \"bundle_status\": {\n      \"definition\": \"string\",\n      \"id\": 8194,\n      \"order\": 9348\n    },\n    \"client_idempotency_key\": \"string\",\n    \"comment\": \"string\",\n    \"created\": \"1978-07-15T06:18:54.579Z\",\n    \"credit_provider_id\": 1601,\n    \"host_id\": 3613,\n    \"host_kind\": {\n      \"definition\": \"string\",\n      \"id\": 3474,\n      \"order\": 7999\n    },\n    \"id\": 6850,\n    \"performed_by_id\": 3294,\n    \"step_index\": 6415\n  },\n  {\n    \"action_type\": {\n      \"definition\": \"string\",\n      \"id\": 7027,\n      \"order\": 6729\n    },\n    \"bundle_id\": 5133,\n    \"bundle_status\": {\n      \"definition\": \"string\",\n      \"id\": 3210,\n      \"order\": 6983\n    },\n    \"client_idempotency_key\": \"string\",\n    \"comment\": \"string\",\n    \"created\": \"1968-05-29T02:44:00.285Z\",\n    \"credit_provider_id\": 3783,\n    \"host_id\": 3694,\n    \"host_kind\": {\n      \"definition\": \"string\",\n      \"id\": 9978,\n      \"order\": 1257\n    },\n    \"id\": 9920,\n    \"performed_by_id\": 6243,\n    \"step_index\": 5564\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d53d2e5e-7c92-4907-ab85-869385029184",
+          "name": "api approvals audit configurations list",
+          "request": {
+            "name": "api approvals audit configurations list",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "approvals",
+                "audit",
+                "configurations",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "credit_provider_id",
+                  "value": "<number>"
+                },
+                {
+                  "disabled": false,
+                  "key": "from_date",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "saved_by",
+                  "value": "<number>"
+                },
+                {
+                  "disabled": false,
+                  "key": "subject_kind",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "tenant_id",
+                  "value": "<number>"
+                },
+                {
+                  "disabled": false,
+                  "key": "to_date",
+                  "value": "<dateTime>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "eefa0434-3574-401d-8045-2d93130c5e3d",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "approvals",
+                    "audit",
+                    "configurations",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "credit_provider_id",
+                      "value": "<number>"
+                    },
+                    {
+                      "key": "from_date",
+                      "value": "<dateTime>"
+                    },
+                    {
+                      "key": "saved_by",
+                      "value": "<number>"
+                    },
+                    {
+                      "key": "subject_kind",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "tenant_id",
+                      "value": "<number>"
+                    },
+                    {
+                      "key": "to_date",
+                      "value": "<dateTime>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"configuration_id\": 6742,\n    \"credit_provider_id\": 7840,\n    \"default\": false,\n    \"id\": 1166,\n    \"json_diff\": {},\n    \"name\": \"string\",\n    \"saved_at\": \"1987-01-03T02:56:47.724Z\",\n    \"saved_by_id\": 216,\n    \"subject_kind\": {\n      \"definition\": \"string\",\n      \"id\": 9034,\n      \"order\": 1779,\n      \"host_kind\": 6423\n    },\n    \"tenant_id\": 7494,\n    \"version_id\": \"string\"\n  },\n  {\n    \"configuration_id\": 7627,\n    \"credit_provider_id\": 5727,\n    \"default\": true,\n    \"id\": 811,\n    \"json_diff\": {},\n    \"name\": \"string\",\n    \"saved_at\": \"1972-12-01T16:28:49.159Z\",\n    \"saved_by_id\": 6824,\n    \"subject_kind\": {\n      \"definition\": \"string\",\n      \"id\": 5885,\n      \"order\": 8244,\n      \"host_kind\": 1987\n    },\n    \"tenant_id\": 9795,\n    \"version_id\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "77af27b1-bcc5-48b4-ab8e-24f107b3a313",
+          "name": "api approvals audit configurations retrieve",
+          "request": {
+            "name": "api approvals audit configurations retrieve",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "approvals",
+                "audit",
+                "configurations",
+                ":version_id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "version_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "73c09bfb-ef2c-439d-a812-504c3c4b030e",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "approvals",
+                    "audit",
+                    "configurations",
+                    ":version_id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "version_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"configuration_id\": 8778,\n  \"credit_provider_id\": 2825,\n  \"default\": true,\n  \"id\": 3886,\n  \"json_diff\": {},\n  \"name\": \"string\",\n  \"saved_at\": \"1958-03-29T04:29:40.383Z\",\n  \"saved_by_id\": 8409,\n  \"subject_kind\": {\n    \"definition\": \"string\",\n    \"id\": 5646,\n    \"order\": 2912,\n    \"host_kind\": 119\n  },\n  \"tenant_id\": 7982,\n  \"version_id\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "33e4052f-85b7-4bbf-95f8-3f8e43a3b000",
+          "name": "api approvals audit requests list",
+          "request": {
+            "name": "api approvals audit requests list",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "approvals",
+                "audit",
+                "requests",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "action_type",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "credit_provider_id",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "from_date",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "host_id",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "host_kind",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "performed_by",
+                  "value": "<number>"
+                },
+                {
+                  "disabled": false,
+                  "key": "subject_kind",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "to_date",
+                  "value": "<dateTime>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "99d006a5-d463-4b2a-95cd-312124272169",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "approvals",
+                    "audit",
+                    "requests",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "action_type",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "credit_provider_id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "from_date",
+                      "value": "<dateTime>"
+                    },
+                    {
+                      "key": "host_id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "host_kind",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "performed_by",
+                      "value": "<number>"
+                    },
+                    {
+                      "key": "subject_kind",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "to_date",
+                      "value": "<dateTime>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"action_type\": {\n      \"definition\": \"string\",\n      \"id\": 9219,\n      \"order\": 3343\n    },\n    \"after_value\": {},\n    \"approver_role\": \"string\",\n    \"approver_user_identifier\": \"string\",\n    \"before_value\": {},\n    \"bundle_id\": 2042,\n    \"client_idempotency_key\": \"string\",\n    \"comment\": \"string\",\n    \"configuration_version_id\": \"string\",\n    \"created\": \"1984-02-07T09:15:40.547Z\",\n    \"credit_provider_id\": 2775,\n    \"host_id\": 905,\n    \"host_kind\": {\n      \"definition\": \"string\",\n      \"id\": 745,\n      \"order\": 5356\n    },\n    \"id\": 3234,\n    \"performed_by_id\": 9418,\n    \"request_current_level\": 6560,\n    \"request_id\": 7827,\n    \"request_status\": {\n      \"definition\": \"string\",\n      \"id\": 6370,\n      \"order\": 252\n    },\n    \"rule_id\": \"string\",\n    \"step_index\": 5952,\n    \"subject_kind\": {\n      \"definition\": \"string\",\n      \"id\": 2601,\n      \"order\": 9973,\n      \"host_kind\": 5966\n    }\n  },\n  {\n    \"action_type\": {\n      \"definition\": \"string\",\n      \"id\": 6553,\n      \"order\": 5548\n    },\n    \"after_value\": {},\n    \"approver_role\": \"string\",\n    \"approver_user_identifier\": \"string\",\n    \"before_value\": {},\n    \"bundle_id\": 33,\n    \"client_idempotency_key\": \"string\",\n    \"comment\": \"string\",\n    \"configuration_version_id\": \"string\",\n    \"created\": \"1988-01-19T15:00:22.667Z\",\n    \"credit_provider_id\": 692,\n    \"host_id\": 9045,\n    \"host_kind\": {\n      \"definition\": \"string\",\n      \"id\": 6629,\n      \"order\": 5798\n    },\n    \"id\": 6718,\n    \"performed_by_id\": 9931,\n    \"request_current_level\": 4031,\n    \"request_id\": 1500,\n    \"request_status\": {\n      \"definition\": \"string\",\n      \"id\": 8941,\n      \"order\": 5392\n    },\n    \"rule_id\": \"string\",\n    \"step_index\": 2395,\n    \"subject_kind\": {\n      \"definition\": \"string\",\n      \"id\": 2954,\n      \"order\": 9200,\n      \"host_kind\": 5729\n    }\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "81a3ca45-da4b-43da-b381-37641add2cb4",
+          "name": "api approvals audit requests actions list",
+          "request": {
+            "name": "api approvals audit requests actions list",
+            "description": {
+              "content": "`GET /approvals/audit/requests/<request_id>/actions/` (Notion E5).\n\nCompact per-request action history used by the FE's §1.4 side-by-side\ndisplay: at the Head Decider level the FE renders both the advisor's\noriginal submit value AND the previous Decider's counter (modify)\nvalue side-by-side. Reads `results[0]` for the submit + walks the\nlist for the latest `modify` action.\n\nAuth: standard advisor/decider permission — the FE caller is whoever\nis acting on the bundle, not a compliance-team auditor, so this\nendpoint deliberately does NOT use `CanReadAuditApi`. Authorisation\non the request itself (advisor sees only their own bundles, decider\nsees only assigned ones) is enforced at the queryset level.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "approvals",
+                "audit",
+                "requests",
+                ":request_id",
+                "actions",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "request_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "93df0ad8-dab2-4b95-980a-ed528a236dd1",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "approvals",
+                    "audit",
+                    "requests",
+                    ":request_id",
+                    "actions",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "request_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"action_type\": {\n      \"definition\": \"string\",\n      \"id\": 5860,\n      \"order\": 4554\n    },\n    \"actor\": {\n      \"key_0\": {},\n      \"key_1\": {}\n    },\n    \"created_at\": \"2011-02-13T20:58:45.109Z\",\n    \"id\": 1980,\n    \"level\": 3956,\n    \"after_value\": {},\n    \"before_value\": {},\n    \"comment\": \"string\"\n  },\n  {\n    \"action_type\": {\n      \"definition\": \"string\",\n      \"id\": 5955,\n      \"order\": 7063\n    },\n    \"actor\": {\n      \"key_0\": {},\n      \"key_1\": {}\n    },\n    \"created_at\": \"1966-07-10T01:02:41.909Z\",\n    \"id\": 7423,\n    \"level\": 8807,\n    \"after_value\": {},\n    \"before_value\": {},\n    \"comment\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "/",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "3752c31e-8e8e-41fe-9239-06ad6d4c37e2",
+    "name": "Oper Agent Documents Approvals API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

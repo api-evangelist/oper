@@ -1,0 +1,3740 @@
+{
+  "item": [
+    {
+      "id": "ffa067f3-d80c-454f-944c-47a3ebfafed6",
+      "name": "Base Products",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "e9edbff5-a068-45a9-8e81-a6c07ae2d56e",
+          "name": "api base products list",
+          "request": {
+            "name": "api base products list",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "9030cabd-c7b1-4f3d-8c4b-c7351805fbe7",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"credit_provider\": {\n      \"active\": true,\n      \"fsma_reference\": \"string\",\n      \"full_name\": \"string\",\n      \"id\": 6946,\n      \"is_liability_provider\": true,\n      \"loan_request_form_documents\": \"string\",\n      \"logo_url\": \"https://DTIPTdGXwHBaTHUJAlXGzMnLZXwjZAqKk.iugzRqGuhPzAzHjoZ2Mc\",\n      \"name\": \"string\",\n      \"order\": 1434863291\n    },\n    \"funder\": {\n      \"id\": 1393,\n      \"name\": \"string\"\n    },\n    \"id\": 5269,\n    \"loan_type\": {\n      \"definition\": \"string\",\n      \"id\": 1334,\n      \"order\": 4465,\n      \"is_grace_period_supported\": false\n    },\n    \"logo_url\": \"http://WTRXMMCyhR.lome4FtkZay,\",\n    \"name\": \"string\",\n    \"active\": true,\n    \"custom_translations\": {},\n    \"has_funder_specific_pricer\": false,\n    \"is_simulator_reference_product\": false\n  },\n  {\n    \"credit_provider\": {\n      \"active\": false,\n      \"fsma_reference\": \"string\",\n      \"full_name\": \"string\",\n      \"id\": 8853,\n      \"is_liability_provider\": true,\n      \"loan_request_form_documents\": \"string\",\n      \"logo_url\": \"https://xsHLNNYzvIpcKivFHs.ffByeHirR0orvPGB9jO,D-sY87Ngf\",\n      \"name\": \"string\",\n      \"order\": 748345361\n    },\n    \"funder\": {\n      \"id\": 1724,\n      \"name\": \"string\"\n    },\n    \"id\": 2351,\n    \"loan_type\": {\n      \"definition\": \"string\",\n      \"id\": 8188,\n      \"order\": 9282,\n      \"is_grace_period_supported\": false\n    },\n    \"logo_url\": \"https://UpZHrsWOmyxejaYuZnTFaiPY.ucrv0fsgpBLEJNprk,bZKDFRczjTObgfBq3w6SJO8LgiRRWP20Lg\",\n    \"name\": \"string\",\n    \"active\": true,\n    \"custom_translations\": {},\n    \"has_funder_specific_pricer\": false,\n    \"is_simulator_reference_product\": false\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "615dd2fe-c1f7-4027-8bfc-5fefc0314d77",
+          "name": "api base products whitelisted brokers import create",
+          "request": {
+            "name": "api base products whitelisted brokers import create",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                "whitelisted-brokers",
+                "import"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "items",
+                  "value": "{\"external_broker_id\":\"<string>\",\"product_id\":\"<integer>\"}",
+                  "description": "(Required) "
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "f140f8b8-4f78-49a0-8c1b-ed8376de8bcf",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    "whitelisted-brokers",
+                    "import"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "items",
+                      "value": "{\"external_broker_id\":\"<string>\",\"product_id\":\"<integer>\"}"
+                    }
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"items\": [\n    {\n      \"external_broker_id\": \"<string>\",\n      \"product_id\": \"<integer>\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "2b0103cd-3b92-4fab-989f-374c42f8b0be",
+          "name": "api base products allowed product variabilities list",
+          "request": {
+            "name": "api base products allowed product variabilities list",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":base_product_id",
+                "allowed-product-variabilities",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "base_product_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "24a74ecf-9f08-4ae9-a44f-bd6bf1dff1d8",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":base_product_id",
+                    "allowed-product-variabilities",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "base_product_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"id\": 5234,\n    \"variability\": {\n      \"definition\": \"string\",\n      \"id\": 2124,\n      \"order\": 2344,\n      \"group_type\": 6315\n    },\n    \"active\": true,\n    \"default_duration\": 945,\n    \"is_simulator_reference_variability\": false,\n    \"max_duration\": 376,\n    \"min_duration\": 10\n  },\n  {\n    \"id\": 6019,\n    \"variability\": {\n      \"definition\": \"string\",\n      \"id\": 2534,\n      \"order\": 9020,\n      \"group_type\": 8063\n    },\n    \"active\": false,\n    \"default_duration\": 828,\n    \"is_simulator_reference_variability\": false,\n    \"max_duration\": 886,\n    \"min_duration\": 725\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9802bcea-d1d7-41b7-a74e-c8a4a787d820",
+          "name": "api base products allowed product variabilities retrieve",
+          "request": {
+            "name": "api base products allowed product variabilities retrieve",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":base_product_id",
+                "allowed-product-variabilities",
+                ":id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "base_product_id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) A unique integer value identifying this Allowed Product Variability."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "06a0aeca-8d53-4fc9-b94a-53b1203d68aa",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":base_product_id",
+                    "allowed-product-variabilities",
+                    ":id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "base_product_id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) A unique integer value identifying this Allowed Product Variability."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": 9720,\n  \"variability\": {\n    \"definition\": \"string\",\n    \"id\": 9249,\n    \"order\": 5309,\n    \"group_type\": 9072\n  },\n  \"active\": false,\n  \"default_duration\": 4,\n  \"is_simulator_reference_variability\": false,\n  \"max_duration\": 628,\n  \"min_duration\": 820\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "39dc0069-d870-477c-9962-d491eac2e0d2",
+          "name": "api base products allowed product variabilities partial update",
+          "request": {
+            "name": "api base products allowed product variabilities partial update",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":base_product_id",
+                "allowed-product-variabilities",
+                ":id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "base_product_id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) A unique integer value identifying this Allowed Product Variability."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PATCH",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "active",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "default_duration",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "is_simulator_reference_variability",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "max_duration",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "min_duration",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "definition",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "group_type",
+                  "value": "<integer>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "3a29c716-a64a-4806-8aa4-752bf487f946",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":base_product_id",
+                    "allowed-product-variabilities",
+                    ":id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "base_product_id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) A unique integer value identifying this Allowed Product Variability."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PATCH",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "key": "active",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "default_duration",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "is_simulator_reference_variability",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "max_duration",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "min_duration",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "definition",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "group_type",
+                      "value": "<integer>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": 7060,\n  \"variability\": {\n    \"definition\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"group_type\": \"<integer>\",\n    \"order\": 2421\n  },\n  \"active\": false,\n  \"default_duration\": 547,\n  \"is_simulator_reference_variability\": true,\n  \"max_duration\": 387,\n  \"min_duration\": 247\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "39467a44-5638-4881-9a29-9433fc1c0c3d",
+          "name": "api base products allowed product variabilities update",
+          "request": {
+            "name": "api base products allowed product variabilities update",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":base_product_id",
+                "allowed-product-variabilities",
+                ":id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "base_product_id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) A unique integer value identifying this Allowed Product Variability."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "definition",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "group_type",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "active",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "default_duration",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "is_simulator_reference_variability",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "max_duration",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "min_duration",
+                  "value": "<integer>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "cb5755d4-a0d9-4a93-b7cf-a088d3e139f7",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":base_product_id",
+                    "allowed-product-variabilities",
+                    ":id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "base_product_id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) A unique integer value identifying this Allowed Product Variability."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "definition",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "group_type",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "active",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "default_duration",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "is_simulator_reference_variability",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "max_duration",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "min_duration",
+                      "value": "<integer>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"variability\": {\n    \"definition\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"group_type\": \"<integer>\",\n    \"order\": 434\n  },\n  \"active\": \"<boolean>\",\n  \"default_duration\": \"<integer>\",\n  \"id\": 8533,\n  \"is_simulator_reference_variability\": \"<boolean>\",\n  \"max_duration\": \"<integer>\",\n  \"min_duration\": \"<integer>\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "67e8f9dd-6c8e-4ee0-8dbc-6129ef9ae25f",
+          "name": "api base products pricing sheets list",
+          "request": {
+            "name": "api base products pricing sheets list",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":base_product_id",
+                "pricing-sheets",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "base_product_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "e02c57ee-36eb-40b4-a0c7-d127c7484b43",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":base_product_id",
+                    "pricing-sheets",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "base_product_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"base_rates\": [\n      {\n        \"id\": 9683,\n        \"percentage\": \"string\",\n        \"rate\": 7988.340148159725,\n        \"variability\": {\n          \"definition\": \"<string>\",\n          \"id\": \"<integer>\",\n          \"group_type\": \"<integer>\",\n          \"order\": 5946\n        }\n      },\n      {\n        \"id\": 7461,\n        \"percentage\": \"string\",\n        \"rate\": 9044.706365157499,\n        \"variability\": {\n          \"definition\": \"<string>\",\n          \"id\": \"<integer>\",\n          \"group_type\": \"<integer>\",\n          \"order\": 9194\n        }\n      }\n    ],\n    \"created\": \"2009-09-01T16:49:21.670Z\",\n    \"id\": 8057,\n    \"is_active\": \"string\",\n    \"last_modified\": \"1951-06-02T00:07:13.944Z\",\n    \"product\": {\n      \"id\": 9344\n    },\n    \"valid_from\": \"2012-08-18\",\n    \"version\": \"string\",\n    \"pricing_configuration\": \"\"\n  },\n  {\n    \"base_rates\": [\n      {\n        \"id\": 4891,\n        \"percentage\": \"string\",\n        \"rate\": 1618.4737306360407,\n        \"variability\": {\n          \"definition\": \"<string>\",\n          \"id\": \"<integer>\",\n          \"group_type\": \"<integer>\",\n          \"order\": 8981\n        }\n      },\n      {\n        \"id\": 6615,\n        \"percentage\": \"string\",\n        \"rate\": 2633.919046566787,\n        \"variability\": {\n          \"definition\": \"<string>\",\n          \"id\": \"<integer>\",\n          \"group_type\": \"<integer>\",\n          \"order\": 57\n        }\n      }\n    ],\n    \"created\": \"1959-04-09T06:38:41.004Z\",\n    \"id\": 4195,\n    \"is_active\": \"string\",\n    \"last_modified\": \"1969-11-07T12:26:30.428Z\",\n    \"product\": {\n      \"id\": 7315\n    },\n    \"valid_from\": \"2019-02-28\",\n    \"version\": \"string\",\n    \"pricing_configuration\": \"\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "eaeffdd9-aaba-4a2e-a108-d0916ac53f21",
+          "name": "api base products pricing sheets create",
+          "request": {
+            "name": "api base products pricing sheets create",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":base_product_id",
+                "pricing-sheets",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "base_product_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "base_rates",
+                  "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "base_rates",
+                  "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "valid_from",
+                  "value": "<date>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "version",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "pricing_configuration",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "da28dcc3-686b-4d4e-9206-842dd9a503fb",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":base_product_id",
+                    "pricing-sheets",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "base_product_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "base_rates",
+                      "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "base_rates",
+                      "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "valid_from",
+                      "value": "<date>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "version",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "pricing_configuration",
+                      "value": ""
+                    }
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"base_rates\": [\n    {\n      \"rate\": \"<double>\",\n      \"variability\": {\n        \"definition\": \"<string>\",\n        \"id\": \"<integer>\",\n        \"group_type\": \"<integer>\",\n        \"order\": 1290\n      },\n      \"id\": 6726,\n      \"percentage\": \"string\"\n    },\n    {\n      \"rate\": \"<double>\",\n      \"variability\": {\n        \"definition\": \"<string>\",\n        \"id\": \"<integer>\",\n        \"group_type\": \"<integer>\",\n        \"order\": 8886\n      },\n      \"id\": 6955,\n      \"percentage\": \"string\"\n    }\n  ],\n  \"product\": {\n    \"id\": \"<integer>\"\n  },\n  \"valid_from\": \"<date>\",\n  \"version\": \"<string>\",\n  \"created\": \"1982-05-30T17:42:15.716Z\",\n  \"id\": 8632,\n  \"is_active\": \"string\",\n  \"last_modified\": \"1961-09-06T22:34:42.139Z\",\n  \"pricing_configuration\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b9f6358f-654e-40a2-b646-8af1a29d5523",
+          "name": "api base products pricing sheets destroy",
+          "request": {
+            "name": "api base products pricing sheets destroy",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":base_product_id",
+                "pricing-sheets",
+                ":id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "base_product_id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) A unique integer value identifying this Pricing sheet."
+                }
+              ]
+            },
+            "method": "DELETE",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "a40c78c5-e785-495a-9429-839328c5d66f",
+              "name": "No response body",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":base_product_id",
+                    "pricing-sheets",
+                    ":id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "base_product_id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) A unique integer value identifying this Pricing sheet."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "No Content",
+              "code": 204,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9b19910d-172f-47e7-9a9d-e7d20a0ce6c2",
+          "name": "api base products pricing sheets retrieve",
+          "request": {
+            "name": "api base products pricing sheets retrieve",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":base_product_id",
+                "pricing-sheets",
+                ":id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "base_product_id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) A unique integer value identifying this Pricing sheet."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "810b8ebf-cea5-49ee-b4e4-1f1aa881cb76",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":base_product_id",
+                    "pricing-sheets",
+                    ":id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "base_product_id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) A unique integer value identifying this Pricing sheet."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"base_rates\": [\n    {\n      \"rate\": \"<double>\",\n      \"variability\": {\n        \"definition\": \"<string>\",\n        \"id\": \"<integer>\",\n        \"group_type\": \"<integer>\",\n        \"order\": 1290\n      },\n      \"id\": 6726,\n      \"percentage\": \"string\"\n    },\n    {\n      \"rate\": \"<double>\",\n      \"variability\": {\n        \"definition\": \"<string>\",\n        \"id\": \"<integer>\",\n        \"group_type\": \"<integer>\",\n        \"order\": 8886\n      },\n      \"id\": 6955,\n      \"percentage\": \"string\"\n    }\n  ],\n  \"product\": {\n    \"id\": \"<integer>\"\n  },\n  \"valid_from\": \"<date>\",\n  \"version\": \"<string>\",\n  \"created\": \"1982-05-30T17:42:15.716Z\",\n  \"id\": 8632,\n  \"is_active\": \"string\",\n  \"last_modified\": \"1961-09-06T22:34:42.139Z\",\n  \"pricing_configuration\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9cf736c6-a1c8-45eb-b5e0-464c8efc4864",
+          "name": "api base products pricing sheets partial update",
+          "request": {
+            "name": "api base products pricing sheets partial update",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":base_product_id",
+                "pricing-sheets",
+                ":id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "base_product_id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) A unique integer value identifying this Pricing sheet."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PATCH",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "base_rates",
+                  "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}"
+                },
+                {
+                  "disabled": false,
+                  "key": "base_rates",
+                  "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}"
+                },
+                {
+                  "disabled": false,
+                  "key": "pricing_configuration",
+                  "value": ""
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "valid_from",
+                  "value": "<date>"
+                },
+                {
+                  "disabled": false,
+                  "key": "version",
+                  "value": "<string>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "4336c104-8866-4361-8331-384f04130ac4",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":base_product_id",
+                    "pricing-sheets",
+                    ":id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "base_product_id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) A unique integer value identifying this Pricing sheet."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PATCH",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "key": "base_rates",
+                      "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "base_rates",
+                      "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "pricing_configuration",
+                      "value": ""
+                    },
+                    {
+                      "disabled": false,
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "valid_from",
+                      "value": "<date>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "version",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"base_rates\": [\n    {\n      \"rate\": \"<double>\",\n      \"variability\": {\n        \"definition\": \"<string>\",\n        \"id\": \"<integer>\",\n        \"group_type\": \"<integer>\",\n        \"order\": 1290\n      },\n      \"id\": 6726,\n      \"percentage\": \"string\"\n    },\n    {\n      \"rate\": \"<double>\",\n      \"variability\": {\n        \"definition\": \"<string>\",\n        \"id\": \"<integer>\",\n        \"group_type\": \"<integer>\",\n        \"order\": 8886\n      },\n      \"id\": 6955,\n      \"percentage\": \"string\"\n    }\n  ],\n  \"product\": {\n    \"id\": \"<integer>\"\n  },\n  \"valid_from\": \"<date>\",\n  \"version\": \"<string>\",\n  \"created\": \"1982-05-30T17:42:15.716Z\",\n  \"id\": 8632,\n  \"is_active\": \"string\",\n  \"last_modified\": \"1961-09-06T22:34:42.139Z\",\n  \"pricing_configuration\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e1926e6a-ae3d-4bd8-8743-51f7527a859a",
+          "name": "api base products pricing sheets update",
+          "request": {
+            "name": "api base products pricing sheets update",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":base_product_id",
+                "pricing-sheets",
+                ":id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "base_product_id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) A unique integer value identifying this Pricing sheet."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "base_rates",
+                  "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "base_rates",
+                  "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "valid_from",
+                  "value": "<date>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "version",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "pricing_configuration",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "8e30184d-df7c-4b8d-8a16-d6208ef1225e",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":base_product_id",
+                    "pricing-sheets",
+                    ":id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "base_product_id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) A unique integer value identifying this Pricing sheet."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "base_rates",
+                      "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "base_rates",
+                      "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "valid_from",
+                      "value": "<date>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "version",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "pricing_configuration",
+                      "value": ""
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"base_rates\": [\n    {\n      \"rate\": \"<double>\",\n      \"variability\": {\n        \"definition\": \"<string>\",\n        \"id\": \"<integer>\",\n        \"group_type\": \"<integer>\",\n        \"order\": 1290\n      },\n      \"id\": 6726,\n      \"percentage\": \"string\"\n    },\n    {\n      \"rate\": \"<double>\",\n      \"variability\": {\n        \"definition\": \"<string>\",\n        \"id\": \"<integer>\",\n        \"group_type\": \"<integer>\",\n        \"order\": 8886\n      },\n      \"id\": 6955,\n      \"percentage\": \"string\"\n    }\n  ],\n  \"product\": {\n    \"id\": \"<integer>\"\n  },\n  \"valid_from\": \"<date>\",\n  \"version\": \"<string>\",\n  \"created\": \"1982-05-30T17:42:15.716Z\",\n  \"id\": 8632,\n  \"is_active\": \"string\",\n  \"last_modified\": \"1961-09-06T22:34:42.139Z\",\n  \"pricing_configuration\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4251ac4d-b11d-4ca8-a70f-9349e286682a",
+          "name": "api base products pricing sheets bulk update base rates partial update",
+          "request": {
+            "name": "api base products pricing sheets bulk update base rates partial update",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":base_product_id",
+                "pricing-sheets",
+                ":id",
+                "bulk-update-base-rates",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "base_product_id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) A unique integer value identifying this Pricing sheet."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PATCH",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "base_rates",
+                  "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}"
+                },
+                {
+                  "disabled": false,
+                  "key": "base_rates",
+                  "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}"
+                },
+                {
+                  "disabled": false,
+                  "key": "pricing_configuration",
+                  "value": ""
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "valid_from",
+                  "value": "<date>"
+                },
+                {
+                  "disabled": false,
+                  "key": "version",
+                  "value": "<string>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "10247059-a0b2-4d6b-90ed-211576b35b22",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":base_product_id",
+                    "pricing-sheets",
+                    ":id",
+                    "bulk-update-base-rates",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "base_product_id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) A unique integer value identifying this Pricing sheet."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PATCH",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "key": "base_rates",
+                      "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "base_rates",
+                      "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "pricing_configuration",
+                      "value": ""
+                    },
+                    {
+                      "disabled": false,
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "valid_from",
+                      "value": "<date>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "version",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"base_rates\": [\n    {\n      \"rate\": \"<double>\",\n      \"variability\": {\n        \"definition\": \"<string>\",\n        \"id\": \"<integer>\",\n        \"group_type\": \"<integer>\",\n        \"order\": 1290\n      },\n      \"id\": 6726,\n      \"percentage\": \"string\"\n    },\n    {\n      \"rate\": \"<double>\",\n      \"variability\": {\n        \"definition\": \"<string>\",\n        \"id\": \"<integer>\",\n        \"group_type\": \"<integer>\",\n        \"order\": 8886\n      },\n      \"id\": 6955,\n      \"percentage\": \"string\"\n    }\n  ],\n  \"product\": {\n    \"id\": \"<integer>\"\n  },\n  \"valid_from\": \"<date>\",\n  \"version\": \"<string>\",\n  \"created\": \"1982-05-30T17:42:15.716Z\",\n  \"id\": 8632,\n  \"is_active\": \"string\",\n  \"last_modified\": \"1961-09-06T22:34:42.139Z\",\n  \"pricing_configuration\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c6fc3407-5242-42f3-835e-349c623fe0c4",
+          "name": "api base products pricing sheets bulk update discounts partial update",
+          "request": {
+            "name": "api base products pricing sheets bulk update discounts partial update",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":base_product_id",
+                "pricing-sheets",
+                ":id",
+                "bulk-update-discounts",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "base_product_id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) A unique integer value identifying this Pricing sheet."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PATCH",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "base_rates",
+                  "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}"
+                },
+                {
+                  "disabled": false,
+                  "key": "base_rates",
+                  "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}"
+                },
+                {
+                  "disabled": false,
+                  "key": "pricing_configuration",
+                  "value": ""
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "valid_from",
+                  "value": "<date>"
+                },
+                {
+                  "disabled": false,
+                  "key": "version",
+                  "value": "<string>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "b08b327a-9d20-489b-9d49-bad706315bbe",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":base_product_id",
+                    "pricing-sheets",
+                    ":id",
+                    "bulk-update-discounts",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "base_product_id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) A unique integer value identifying this Pricing sheet."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PATCH",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "key": "base_rates",
+                      "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "base_rates",
+                      "value": "{\"rate\":\"<double>\",\"variability\":{\"definition\":\"<string>\",\"id\":\"<integer>\",\"group_type\":\"<integer>\"}}"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "pricing_configuration",
+                      "value": ""
+                    },
+                    {
+                      "disabled": false,
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "valid_from",
+                      "value": "<date>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "version",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"base_rates\": [\n    {\n      \"rate\": \"<double>\",\n      \"variability\": {\n        \"definition\": \"<string>\",\n        \"id\": \"<integer>\",\n        \"group_type\": \"<integer>\",\n        \"order\": 1290\n      },\n      \"id\": 6726,\n      \"percentage\": \"string\"\n    },\n    {\n      \"rate\": \"<double>\",\n      \"variability\": {\n        \"definition\": \"<string>\",\n        \"id\": \"<integer>\",\n        \"group_type\": \"<integer>\",\n        \"order\": 8886\n      },\n      \"id\": 6955,\n      \"percentage\": \"string\"\n    }\n  ],\n  \"product\": {\n    \"id\": \"<integer>\"\n  },\n  \"valid_from\": \"<date>\",\n  \"version\": \"<string>\",\n  \"created\": \"1982-05-30T17:42:15.716Z\",\n  \"id\": 8632,\n  \"is_active\": \"string\",\n  \"last_modified\": \"1961-09-06T22:34:42.139Z\",\n  \"pricing_configuration\": \"\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "2b7a937b-a244-4534-82d4-aafdbb3ad375",
+          "name": "api base products pricing sheets base rates list",
+          "request": {
+            "name": "api base products pricing sheets base rates list",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":base_product_id",
+                "pricing-sheets",
+                ":pricing_sheet_id",
+                "base-rates",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "base_product_id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "pricing_sheet_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "5054bb42-e6c9-475c-8b0a-0ac42ff31c3c",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":base_product_id",
+                    "pricing-sheets",
+                    ":pricing_sheet_id",
+                    "base-rates",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "base_product_id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "pricing_sheet_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"id\": 1250,\n    \"percentage\": \"string\",\n    \"pricing_sheet\": {\n      \"id\": 1213\n    },\n    \"rate\": 640.6981548258228,\n    \"variability\": {\n      \"definition\": \"<string>\",\n      \"id\": \"<integer>\",\n      \"group_type\": \"<integer>\",\n      \"order\": 806\n    }\n  },\n  {\n    \"id\": 4373,\n    \"percentage\": \"string\",\n    \"pricing_sheet\": {\n      \"id\": 3551\n    },\n    \"rate\": 6851.756444316226,\n    \"variability\": {\n      \"definition\": \"<string>\",\n      \"id\": \"<integer>\",\n      \"group_type\": \"<integer>\",\n      \"order\": 1152\n    }\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "63c055a7-e91d-4592-8f06-bbd39106e873",
+          "name": "api base products pricing sheets base rates create",
+          "request": {
+            "name": "api base products pricing sheets base rates create",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":base_product_id",
+                "pricing-sheets",
+                ":pricing_sheet_id",
+                "base-rates",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "base_product_id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "pricing_sheet_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "rate",
+                  "value": "<double>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "definition",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "group_type",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "be60f518-9a51-41c8-8edd-6b5f756caa0b",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":base_product_id",
+                    "pricing-sheets",
+                    ":pricing_sheet_id",
+                    "base-rates",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "base_product_id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "pricing_sheet_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "rate",
+                      "value": "<double>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "definition",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "group_type",
+                      "value": "<integer>"
+                    }
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"pricing_sheet\": {\n    \"id\": \"<integer>\"\n  },\n  \"rate\": \"<double>\",\n  \"variability\": {\n    \"definition\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"group_type\": \"<integer>\",\n    \"order\": 6605\n  },\n  \"id\": 2705,\n  \"percentage\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c63800b6-9968-4ef3-803c-b8b2e427d213",
+          "name": "api base products pricing sheets base rates retrieve",
+          "request": {
+            "name": "api base products pricing sheets base rates retrieve",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":base_product_id",
+                "pricing-sheets",
+                ":pricing_sheet_id",
+                "base-rates",
+                ":id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "base_product_id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) A unique integer value identifying this Base rate."
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "pricing_sheet_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "8508ffb3-5016-4e4e-87fc-a997a318effa",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":base_product_id",
+                    "pricing-sheets",
+                    ":pricing_sheet_id",
+                    "base-rates",
+                    ":id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "base_product_id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) A unique integer value identifying this Base rate."
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "pricing_sheet_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"pricing_sheet\": {\n    \"id\": \"<integer>\"\n  },\n  \"rate\": \"<double>\",\n  \"variability\": {\n    \"definition\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"group_type\": \"<integer>\",\n    \"order\": 6605\n  },\n  \"id\": 2705,\n  \"percentage\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c7131d50-42af-4fde-b605-2b2f015b630b",
+          "name": "api base products pricing sheets base rates partial update",
+          "request": {
+            "name": "api base products pricing sheets base rates partial update",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":base_product_id",
+                "pricing-sheets",
+                ":pricing_sheet_id",
+                "base-rates",
+                ":id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "base_product_id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) A unique integer value identifying this Base rate."
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "pricing_sheet_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PATCH",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "rate",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "definition",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "group_type",
+                  "value": "<integer>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "51dac255-17cc-489e-9b0b-08185546ab37",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":base_product_id",
+                    "pricing-sheets",
+                    ":pricing_sheet_id",
+                    "base-rates",
+                    ":id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "base_product_id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) A unique integer value identifying this Base rate."
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "pricing_sheet_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PATCH",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "rate",
+                      "value": "<double>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "definition",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "group_type",
+                      "value": "<integer>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"pricing_sheet\": {\n    \"id\": \"<integer>\"\n  },\n  \"rate\": \"<double>\",\n  \"variability\": {\n    \"definition\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"group_type\": \"<integer>\",\n    \"order\": 6605\n  },\n  \"id\": 2705,\n  \"percentage\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "bc949b8a-60f4-4de6-a275-ca8f3f7755f5",
+          "name": "api base products pricing sheets base rates update",
+          "request": {
+            "name": "api base products pricing sheets base rates update",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":base_product_id",
+                "pricing-sheets",
+                ":pricing_sheet_id",
+                "base-rates",
+                ":id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "base_product_id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) A unique integer value identifying this Base rate."
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "pricing_sheet_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "rate",
+                  "value": "<double>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "definition",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "group_type",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "b63ee12b-6e78-40fd-b85a-97f28fd0ecfd",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":base_product_id",
+                    "pricing-sheets",
+                    ":pricing_sheet_id",
+                    "base-rates",
+                    ":id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "base_product_id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) A unique integer value identifying this Base rate."
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "pricing_sheet_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "rate",
+                      "value": "<double>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "definition",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "group_type",
+                      "value": "<integer>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"pricing_sheet\": {\n    \"id\": \"<integer>\"\n  },\n  \"rate\": \"<double>\",\n  \"variability\": {\n    \"definition\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"group_type\": \"<integer>\",\n    \"order\": 6605\n  },\n  \"id\": 2705,\n  \"percentage\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9f2954b5-055b-4156-b95e-060222e195de",
+          "name": "api base products pricing sheets discounts list",
+          "request": {
+            "name": "api base products pricing sheets discounts list",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":base_product_id",
+                "pricing-sheets",
+                ":pricing_sheet_id",
+                "discounts",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "base_product_id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "pricing_sheet_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "1e0ebb28-341e-451b-b392-23b7dab35fc6",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":base_product_id",
+                    "pricing-sheets",
+                    ":pricing_sheet_id",
+                    "discounts",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "base_product_id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "pricing_sheet_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"discounts\": [\n      {\n        \"discounts\": [\n          {\n            \"name\": \"string\",\n            \"discounts\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ],\n            \"explanations\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ],\n            \"interest_rate\": 3284.2911353841296,\n            \"is_default\": true,\n            \"is_selected_by_default\": false,\n            \"max_discounts_allowed\": 6602,\n            \"parameters\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ]\n          },\n          {\n            \"name\": \"string\",\n            \"discounts\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ],\n            \"explanations\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ],\n            \"interest_rate\": 4591.810715683149,\n            \"is_default\": false,\n            \"is_selected_by_default\": false,\n            \"max_discounts_allowed\": 2058,\n            \"parameters\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ]\n          }\n        ],\n        \"max_discounts_allowed\": 4339,\n        \"name\": \"string\"\n      },\n      {\n        \"discounts\": [\n          {\n            \"name\": \"string\",\n            \"discounts\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ],\n            \"explanations\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ],\n            \"interest_rate\": 8111.9190871370465,\n            \"is_default\": true,\n            \"is_selected_by_default\": false,\n            \"max_discounts_allowed\": 4061,\n            \"parameters\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ]\n          },\n          {\n            \"name\": \"string\",\n            \"discounts\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ],\n            \"explanations\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ],\n            \"interest_rate\": 9541.679696974927,\n            \"is_default\": false,\n            \"is_selected_by_default\": false,\n            \"max_discounts_allowed\": 8976,\n            \"parameters\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ]\n          }\n        ],\n        \"max_discounts_allowed\": 7619,\n        \"name\": \"string\"\n      }\n    ]\n  },\n  {\n    \"discounts\": [\n      {\n        \"discounts\": [\n          {\n            \"name\": \"string\",\n            \"discounts\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ],\n            \"explanations\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ],\n            \"interest_rate\": 5438.863795365615,\n            \"is_default\": true,\n            \"is_selected_by_default\": false,\n            \"max_discounts_allowed\": 3154,\n            \"parameters\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ]\n          },\n          {\n            \"name\": \"string\",\n            \"discounts\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ],\n            \"explanations\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ],\n            \"interest_rate\": 5860.925378846896,\n            \"is_default\": true,\n            \"is_selected_by_default\": false,\n            \"max_discounts_allowed\": 2681,\n            \"parameters\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ]\n          }\n        ],\n        \"max_discounts_allowed\": 229,\n        \"name\": \"string\"\n      },\n      {\n        \"discounts\": [\n          {\n            \"name\": \"string\",\n            \"discounts\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ],\n            \"explanations\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ],\n            \"interest_rate\": 4531.221639482308,\n            \"is_default\": true,\n            \"is_selected_by_default\": true,\n            \"max_discounts_allowed\": 8882,\n            \"parameters\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ]\n          },\n          {\n            \"name\": \"string\",\n            \"discounts\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ],\n            \"explanations\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ],\n            \"interest_rate\": 1030.8031296234144,\n            \"is_default\": false,\n            \"is_selected_by_default\": false,\n            \"max_discounts_allowed\": 8959,\n            \"parameters\": [\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              },\n              {\n                \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n              }\n            ]\n          }\n        ],\n        \"max_discounts_allowed\": 6012,\n        \"name\": \"string\"\n      }\n    ]\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0b54adb6-5b9c-4c09-9fe6-8b85e262a14d",
+          "name": "api base products retrieve",
+          "request": {
+            "name": "api base products retrieve",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) A unique integer value identifying this Base product."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "33c240ec-262c-40a1-90eb-6f47f257f48e",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) A unique integer value identifying this Base product."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"credit_provider\": {\n    \"active\": true,\n    \"fsma_reference\": \"string\",\n    \"full_name\": \"string\",\n    \"id\": 3558,\n    \"is_liability_provider\": true,\n    \"loan_request_form_documents\": \"string\",\n    \"logo_url\": \"http://LgxAZThOrWHgIKx.jykJP1OkAhew,E7kdPvqa3dtObpS8SwnEdA8Kra\",\n    \"name\": \"string\",\n    \"order\": 242127531\n  },\n  \"funder\": {\n    \"id\": 9327,\n    \"name\": \"string\"\n  },\n  \"id\": 9201,\n  \"loan_type\": {\n    \"definition\": \"string\",\n    \"id\": 2102,\n    \"order\": 5662,\n    \"is_grace_period_supported\": true\n  },\n  \"logo_url\": \"https://tUbvXxn.rinaxT41cspqFjLc4PfahoVLBpCdkpVV6MCh\",\n  \"name\": \"string\",\n  \"active\": false,\n  \"custom_translations\": {},\n  \"has_funder_specific_pricer\": false,\n  \"is_simulator_reference_product\": false\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "67dd1957-a695-4278-ae55-7e5bc34a719c",
+          "name": "api base products partial update",
+          "request": {
+            "name": "api base products partial update",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) A unique integer value identifying this Base product."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PATCH",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "active",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "has_funder_specific_pricer",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "is_simulator_reference_product",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "logo_url",
+                  "value": "<uri>"
+                },
+                {
+                  "disabled": false,
+                  "key": "name",
+                  "value": "<string>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "8378a942-1d66-4383-ad24-f9432acdaf90",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) A unique integer value identifying this Base product."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PATCH",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "key": "active",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "has_funder_specific_pricer",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "is_simulator_reference_product",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "logo_url",
+                      "value": "<uri>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "name",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"credit_provider\": {\n    \"active\": true,\n    \"fsma_reference\": \"string\",\n    \"full_name\": \"string\",\n    \"id\": 3558,\n    \"is_liability_provider\": true,\n    \"loan_request_form_documents\": \"string\",\n    \"logo_url\": \"http://LgxAZThOrWHgIKx.jykJP1OkAhew,E7kdPvqa3dtObpS8SwnEdA8Kra\",\n    \"name\": \"string\",\n    \"order\": 242127531\n  },\n  \"funder\": {\n    \"id\": 9327,\n    \"name\": \"string\"\n  },\n  \"id\": 9201,\n  \"loan_type\": {\n    \"definition\": \"string\",\n    \"id\": 2102,\n    \"order\": 5662,\n    \"is_grace_period_supported\": true\n  },\n  \"logo_url\": \"https://tUbvXxn.rinaxT41cspqFjLc4PfahoVLBpCdkpVV6MCh\",\n  \"name\": \"string\",\n  \"active\": false,\n  \"custom_translations\": {},\n  \"has_funder_specific_pricer\": false,\n  \"is_simulator_reference_product\": false\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "fc5ae61c-4202-4e57-960a-8128297d887b",
+          "name": "api base products update",
+          "request": {
+            "name": "api base products update",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "base-products",
+                ":id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) A unique integer value identifying this Base product."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "logo_url",
+                  "value": "<uri>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "name",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "active",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "has_funder_specific_pricer",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "is_simulator_reference_product",
+                  "value": "<boolean>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "4d34f6bf-8267-4166-abf9-4c151a689d0b",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "base-products",
+                    ":id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) A unique integer value identifying this Base product."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "logo_url",
+                      "value": "<uri>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "active",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "has_funder_specific_pricer",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "is_simulator_reference_product",
+                      "value": "<boolean>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"logo_url\": \"<uri>\",\n  \"name\": \"<string>\",\n  \"active\": \"<boolean>\",\n  \"credit_provider\": {\n    \"active\": true,\n    \"fsma_reference\": \"string\",\n    \"full_name\": \"string\",\n    \"id\": 7662,\n    \"is_liability_provider\": false,\n    \"loan_request_form_documents\": \"string\",\n    \"logo_url\": \"https://vdPdMsJIFxvbpdtmKFkMaML.evcHVKAc4Uu9-G30nlTRLediT,hFUx.naNS0J62Y5W\",\n    \"name\": \"string\",\n    \"order\": 1655318097\n  },\n  \"custom_translations\": {},\n  \"funder\": {\n    \"id\": 4867,\n    \"name\": \"string\"\n  },\n  \"has_funder_specific_pricer\": \"<boolean>\",\n  \"id\": 1139,\n  \"is_simulator_reference_product\": \"<boolean>\",\n  \"loan_type\": {\n    \"definition\": \"string\",\n    \"id\": 3582,\n    \"order\": 9866,\n    \"is_grace_period_supported\": true\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "/",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "d7d58321-2f07-4b9b-ad0f-27a6b0d2f777",
+    "name": "Oper Agent Documents Base Products API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

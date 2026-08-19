@@ -1,0 +1,1435 @@
+{
+  "item": [
+    {
+      "id": "a9105294-90bc-4351-a133-15bd0b830ab1",
+      "name": "Documentation Library",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "7b4b897e-f357-4b46-996b-50ec395b374e",
+          "name": "api documentation library documents list",
+          "request": {
+            "name": "api documentation library documents list",
+            "description": {
+              "content": "A ViewSet mixin that parametrizes DRF methods over roles",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "documentation-library",
+                "documents",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "828737c4-19c5-495a-9a46-a433522e8437",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "documentation-library",
+                    "documents",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"base_products\": [\n      7338,\n      9185\n    ],\n    \"created\": \"1955-12-19T02:00:54.017Z\",\n    \"document_type\": {\n      \"definition\": \"string\",\n      \"id\": 7896,\n      \"order\": 3383\n    },\n    \"id\": 2979,\n    \"language\": {\n      \"definition\": \"string\",\n      \"id\": 9858,\n      \"order\": 8998\n    },\n    \"last_modified\": \"1964-11-15T01:24:24.424Z\",\n    \"active\": false,\n    \"check_function_configuration\": \"\",\n    \"credit_provider\": {\n      \"active\": true,\n      \"fsma_reference\": \"string\",\n      \"full_name\": \"string\",\n      \"id\": 7481,\n      \"is_liability_provider\": true,\n      \"loan_request_form_documents\": \"string\",\n      \"logo_url\": \"http://NSHWdO.pnaB4q\",\n      \"name\": \"string\",\n      \"order\": 1163431602\n    },\n    \"custom_font_name\": \"string\",\n    \"data_merge_strategy\": \"string\",\n    \"data_override_template\": \"string\",\n    \"document_generation_configuration\": \"\",\n    \"file_name\": \"string\",\n    \"file_path\": \"string\"\n  },\n  {\n    \"base_products\": [\n      8258,\n      1524\n    ],\n    \"created\": \"1984-09-08T05:28:24.093Z\",\n    \"document_type\": {\n      \"definition\": \"string\",\n      \"id\": 5169,\n      \"order\": 2469\n    },\n    \"id\": 7904,\n    \"language\": {\n      \"definition\": \"string\",\n      \"id\": 9880,\n      \"order\": 5759\n    },\n    \"last_modified\": \"2000-12-25T09:31:14.979Z\",\n    \"active\": false,\n    \"check_function_configuration\": \"\",\n    \"credit_provider\": {\n      \"active\": false,\n      \"fsma_reference\": \"string\",\n      \"full_name\": \"string\",\n      \"id\": 4397,\n      \"is_liability_provider\": true,\n      \"loan_request_form_documents\": \"string\",\n      \"logo_url\": \"http://nejPWbIiWTnSyuhHFlkG.kouNJkLbIwKs-,3ab2s,xEv,\",\n      \"name\": \"string\",\n      \"order\": 244344202\n    },\n    \"custom_font_name\": \"string\",\n    \"data_merge_strategy\": \"string\",\n    \"data_override_template\": \"string\",\n    \"document_generation_configuration\": \"\",\n    \"file_name\": \"string\",\n    \"file_path\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "07c83271-75b5-4fb0-9f55-c1136ab1bf8b",
+          "name": "api documentation library documents create",
+          "request": {
+            "name": "api documentation library documents create",
+            "description": {
+              "content": "A ViewSet mixin that parametrizes DRF methods over roles",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "documentation-library",
+                "documents",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "definition",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "definition",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "active",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "check_function_configuration",
+                  "value": ""
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "custom_font_name",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "data_merge_strategy",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "data_override_template",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "document_generation_configuration",
+                  "value": ""
+                },
+                {
+                  "disabled": false,
+                  "key": "file",
+                  "value": "<uri>"
+                },
+                {
+                  "disabled": false,
+                  "key": "file_name",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "file_path",
+                  "value": "<string>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "065c6196-6c7a-4740-aee2-97862e5244a0",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "documentation-library",
+                    "documents",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "definition",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "definition",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "active",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "check_function_configuration",
+                      "value": ""
+                    },
+                    {
+                      "disabled": false,
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "custom_font_name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "data_merge_strategy",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "data_override_template",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "document_generation_configuration",
+                      "value": ""
+                    },
+                    {
+                      "disabled": false,
+                      "key": "file",
+                      "value": "<uri>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "file_name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "file_path",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"document_type\": {\n    \"definition\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"order\": 5261\n  },\n  \"language\": {\n    \"definition\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"order\": 8289\n  },\n  \"active\": \"<boolean>\",\n  \"base_products\": [\n    7507,\n    6166\n  ],\n  \"check_function_configuration\": \"\",\n  \"created\": \"2015-10-12T03:38:53.486Z\",\n  \"credit_provider\": {\n    \"id\": \"<integer>\",\n    \"active\": true,\n    \"fsma_reference\": \"string\",\n    \"full_name\": \"string\",\n    \"is_liability_provider\": true,\n    \"loan_request_form_documents\": \"string\",\n    \"logo_url\": \"http://iWCGRx.bzzH5zQn7vc.N5Fvc.TjPK-unW4EvelDpLlupIFlwrTgXleI-3lJ0O,1IpkUBrKXTjQriV9Z\",\n    \"name\": \"string\",\n    \"order\": 753387072\n  },\n  \"custom_font_name\": \"<string>\",\n  \"data_merge_strategy\": \"<string>\",\n  \"data_override_template\": \"<string>\",\n  \"document_generation_configuration\": \"\",\n  \"file_name\": \"<string>\",\n  \"file_path\": \"<string>\",\n  \"id\": 8122,\n  \"last_modified\": \"1979-08-15T10:05:17.559Z\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "bdd1881e-fbf9-463c-9dda-662354d4992f",
+          "name": "api documentation library documents retrieve",
+          "request": {
+            "name": "api documentation library documents retrieve",
+            "description": {
+              "content": "A ViewSet mixin that parametrizes DRF methods over roles",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "documentation-library",
+                "documents",
+                ":id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "2d709b09-a30a-4320-8a75-1f0726124cd0",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "documentation-library",
+                    "documents",
+                    ":id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"document_type\": {\n    \"definition\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"order\": 5261\n  },\n  \"language\": {\n    \"definition\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"order\": 8289\n  },\n  \"active\": \"<boolean>\",\n  \"base_products\": [\n    7507,\n    6166\n  ],\n  \"check_function_configuration\": \"\",\n  \"created\": \"2015-10-12T03:38:53.486Z\",\n  \"credit_provider\": {\n    \"id\": \"<integer>\",\n    \"active\": true,\n    \"fsma_reference\": \"string\",\n    \"full_name\": \"string\",\n    \"is_liability_provider\": true,\n    \"loan_request_form_documents\": \"string\",\n    \"logo_url\": \"http://iWCGRx.bzzH5zQn7vc.N5Fvc.TjPK-unW4EvelDpLlupIFlwrTgXleI-3lJ0O,1IpkUBrKXTjQriV9Z\",\n    \"name\": \"string\",\n    \"order\": 753387072\n  },\n  \"custom_font_name\": \"<string>\",\n  \"data_merge_strategy\": \"<string>\",\n  \"data_override_template\": \"<string>\",\n  \"document_generation_configuration\": \"\",\n  \"file_name\": \"<string>\",\n  \"file_path\": \"<string>\",\n  \"id\": 8122,\n  \"last_modified\": \"1979-08-15T10:05:17.559Z\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "192e277b-820e-4811-924e-8cf46feb9392",
+          "name": "api documentation library documents partial update",
+          "request": {
+            "name": "api documentation library documents partial update",
+            "description": {
+              "content": "A ViewSet mixin that parametrizes DRF methods over roles",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "documentation-library",
+                "documents",
+                ":id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PATCH",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "active",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "check_function_configuration",
+                  "value": ""
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "custom_font_name",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "data_merge_strategy",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "data_override_template",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "document_generation_configuration",
+                  "value": ""
+                },
+                {
+                  "disabled": false,
+                  "key": "definition",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "file",
+                  "value": "<uri>"
+                },
+                {
+                  "disabled": false,
+                  "key": "file_name",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "file_path",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "definition",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "cee757bd-f001-4f40-ab73-3a938a0b6371",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "documentation-library",
+                    "documents",
+                    ":id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PATCH",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "key": "active",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "check_function_configuration",
+                      "value": ""
+                    },
+                    {
+                      "disabled": false,
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "custom_font_name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "data_merge_strategy",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "data_override_template",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "document_generation_configuration",
+                      "value": ""
+                    },
+                    {
+                      "disabled": false,
+                      "key": "definition",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "file",
+                      "value": "<uri>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "file_name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "file_path",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "definition",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "id",
+                      "value": "<integer>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"document_type\": {\n    \"definition\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"order\": 5261\n  },\n  \"language\": {\n    \"definition\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"order\": 8289\n  },\n  \"active\": \"<boolean>\",\n  \"base_products\": [\n    7507,\n    6166\n  ],\n  \"check_function_configuration\": \"\",\n  \"created\": \"2015-10-12T03:38:53.486Z\",\n  \"credit_provider\": {\n    \"id\": \"<integer>\",\n    \"active\": true,\n    \"fsma_reference\": \"string\",\n    \"full_name\": \"string\",\n    \"is_liability_provider\": true,\n    \"loan_request_form_documents\": \"string\",\n    \"logo_url\": \"http://iWCGRx.bzzH5zQn7vc.N5Fvc.TjPK-unW4EvelDpLlupIFlwrTgXleI-3lJ0O,1IpkUBrKXTjQriV9Z\",\n    \"name\": \"string\",\n    \"order\": 753387072\n  },\n  \"custom_font_name\": \"<string>\",\n  \"data_merge_strategy\": \"<string>\",\n  \"data_override_template\": \"<string>\",\n  \"document_generation_configuration\": \"\",\n  \"file_name\": \"<string>\",\n  \"file_path\": \"<string>\",\n  \"id\": 8122,\n  \"last_modified\": \"1979-08-15T10:05:17.559Z\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "85dd39dd-24db-4e89-a63e-c930661ae11b",
+          "name": "api documentation library documents update",
+          "request": {
+            "name": "api documentation library documents update",
+            "description": {
+              "content": "A ViewSet mixin that parametrizes DRF methods over roles",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "documentation-library",
+                "documents",
+                ":id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "definition",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "definition",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "active",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "check_function_configuration",
+                  "value": ""
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "custom_font_name",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "data_merge_strategy",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "data_override_template",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "document_generation_configuration",
+                  "value": ""
+                },
+                {
+                  "disabled": false,
+                  "key": "file",
+                  "value": "<uri>"
+                },
+                {
+                  "disabled": false,
+                  "key": "file_name",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "file_path",
+                  "value": "<string>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "95e83c68-7142-4c5a-a4e3-e2d607d80786",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "documentation-library",
+                    "documents",
+                    ":id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "definition",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "definition",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "active",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "check_function_configuration",
+                      "value": ""
+                    },
+                    {
+                      "disabled": false,
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "custom_font_name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "data_merge_strategy",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "data_override_template",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "document_generation_configuration",
+                      "value": ""
+                    },
+                    {
+                      "disabled": false,
+                      "key": "file",
+                      "value": "<uri>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "file_name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "file_path",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"document_type\": {\n    \"definition\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"order\": 5261\n  },\n  \"language\": {\n    \"definition\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"order\": 8289\n  },\n  \"active\": \"<boolean>\",\n  \"base_products\": [\n    7507,\n    6166\n  ],\n  \"check_function_configuration\": \"\",\n  \"created\": \"2015-10-12T03:38:53.486Z\",\n  \"credit_provider\": {\n    \"id\": \"<integer>\",\n    \"active\": true,\n    \"fsma_reference\": \"string\",\n    \"full_name\": \"string\",\n    \"is_liability_provider\": true,\n    \"loan_request_form_documents\": \"string\",\n    \"logo_url\": \"http://iWCGRx.bzzH5zQn7vc.N5Fvc.TjPK-unW4EvelDpLlupIFlwrTgXleI-3lJ0O,1IpkUBrKXTjQriV9Z\",\n    \"name\": \"string\",\n    \"order\": 753387072\n  },\n  \"custom_font_name\": \"<string>\",\n  \"data_merge_strategy\": \"<string>\",\n  \"data_override_template\": \"<string>\",\n  \"document_generation_configuration\": \"\",\n  \"file_name\": \"<string>\",\n  \"file_path\": \"<string>\",\n  \"id\": 8122,\n  \"last_modified\": \"1979-08-15T10:05:17.559Z\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7e5ab2da-cd21-43a0-9af7-982d031c4218",
+          "name": "api documentation library documents generate presigned url config panel retrieve",
+          "request": {
+            "name": "api documentation library documents generate presigned url config panel retrieve",
+            "description": {
+              "content": "A ViewSet mixin that parametrizes DRF methods over roles",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "documentation-library",
+                "documents",
+                ":id",
+                "generate-presigned-url-config-panel",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "36e4ba94-51c5-449e-b3c7-853c91d629e3",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "documentation-library",
+                    "documents",
+                    ":id",
+                    "generate-presigned-url-config-panel",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"document_type\": {\n    \"definition\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"order\": 5261\n  },\n  \"language\": {\n    \"definition\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"order\": 8289\n  },\n  \"active\": \"<boolean>\",\n  \"base_products\": [\n    7507,\n    6166\n  ],\n  \"check_function_configuration\": \"\",\n  \"created\": \"2015-10-12T03:38:53.486Z\",\n  \"credit_provider\": {\n    \"id\": \"<integer>\",\n    \"active\": true,\n    \"fsma_reference\": \"string\",\n    \"full_name\": \"string\",\n    \"is_liability_provider\": true,\n    \"loan_request_form_documents\": \"string\",\n    \"logo_url\": \"http://iWCGRx.bzzH5zQn7vc.N5Fvc.TjPK-unW4EvelDpLlupIFlwrTgXleI-3lJ0O,1IpkUBrKXTjQriV9Z\",\n    \"name\": \"string\",\n    \"order\": 753387072\n  },\n  \"custom_font_name\": \"<string>\",\n  \"data_merge_strategy\": \"<string>\",\n  \"data_override_template\": \"<string>\",\n  \"document_generation_configuration\": \"\",\n  \"file_name\": \"<string>\",\n  \"file_path\": \"<string>\",\n  \"id\": 8122,\n  \"last_modified\": \"1979-08-15T10:05:17.559Z\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ce2cc1d0-38f5-4d66-9f19-cf4e976d0828",
+          "name": "api documentation library documents generate presigned url create",
+          "request": {
+            "name": "api documentation library documents generate presigned url create",
+            "description": {
+              "content": "A ViewSet mixin that parametrizes DRF methods over roles",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "documentation-library",
+                "documents",
+                ":id",
+                "generate-presigned-url",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "definition",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "definition",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "active",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "check_function_configuration",
+                  "value": ""
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "custom_font_name",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "data_merge_strategy",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "data_override_template",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "document_generation_configuration",
+                  "value": ""
+                },
+                {
+                  "disabled": false,
+                  "key": "file",
+                  "value": "<uri>"
+                },
+                {
+                  "disabled": false,
+                  "key": "file_name",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "file_path",
+                  "value": "<string>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "6e6b2ea7-324d-43f6-8526-c2e736054893",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "documentation-library",
+                    "documents",
+                    ":id",
+                    "generate-presigned-url",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "definition",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "definition",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "active",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "check_function_configuration",
+                      "value": ""
+                    },
+                    {
+                      "disabled": false,
+                      "key": "id",
+                      "value": "<integer>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "custom_font_name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "data_merge_strategy",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "data_override_template",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "document_generation_configuration",
+                      "value": ""
+                    },
+                    {
+                      "disabled": false,
+                      "key": "file",
+                      "value": "<uri>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "file_name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "file_path",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"document_type\": {\n    \"definition\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"order\": 5261\n  },\n  \"language\": {\n    \"definition\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"order\": 8289\n  },\n  \"active\": \"<boolean>\",\n  \"base_products\": [\n    7507,\n    6166\n  ],\n  \"check_function_configuration\": \"\",\n  \"created\": \"2015-10-12T03:38:53.486Z\",\n  \"credit_provider\": {\n    \"id\": \"<integer>\",\n    \"active\": true,\n    \"fsma_reference\": \"string\",\n    \"full_name\": \"string\",\n    \"is_liability_provider\": true,\n    \"loan_request_form_documents\": \"string\",\n    \"logo_url\": \"http://iWCGRx.bzzH5zQn7vc.N5Fvc.TjPK-unW4EvelDpLlupIFlwrTgXleI-3lJ0O,1IpkUBrKXTjQriV9Z\",\n    \"name\": \"string\",\n    \"order\": 753387072\n  },\n  \"custom_font_name\": \"<string>\",\n  \"data_merge_strategy\": \"<string>\",\n  \"data_override_template\": \"<string>\",\n  \"document_generation_configuration\": \"\",\n  \"file_name\": \"<string>\",\n  \"file_path\": \"<string>\",\n  \"id\": 8122,\n  \"last_modified\": \"1979-08-15T10:05:17.559Z\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "/",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "457e2e97-e6d2-4680-b3b0-fbb8b6c4087f",
+    "name": "Oper Agent Documents Documentation Library API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}
