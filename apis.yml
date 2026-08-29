@@ -9,6 +9,18 @@ description: 'Oper (Oper Credits) is a Belgium-based fintech that provides digit
   offers, financial plans, documents and hundreds of configuration resources, plus a
   versioned Loan Request Webhook API for pushing loan events to lender systems.'
 url: https://raw.githubusercontent.com/api-evangelist/oper/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
@@ -703,6 +715,9 @@ x-enrichment:
   artifacts_added: 18
   pass: local-v1
 common:
+- type: CapabilityMap
+  url: capabilities/oper-capability-edges.yml
+  name: Oper Business Capability Map
 - type: Overlay
   url: overlays/oper-api-overlay.yaml
 - type: Website
