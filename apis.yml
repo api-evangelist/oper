@@ -1,13 +1,12 @@
 aid: oper
 name: Oper
-description: 'Oper (Oper Credits) is a Belgium-based fintech that provides digital mortgage
-  origination software for banks, lenders, brokers and insurers. Its modular Oper Connect
-  platform connects every stakeholder in the mortgage value chain, and its Herman AI
-  underwriting agent automates document classification, data extraction, verification
-  and credit-policy application to shorten time-to-decision. The Oper Connect API is a
-  JWT-authenticated REST API (Django REST Framework style) exposing loan requests, clients,
-  offers, financial plans, documents and hundreds of configuration resources, plus a
-  versioned Loan Request Webhook API for pushing loan events to lender systems.'
+description: Oper (Oper Credits) is a Belgium-based fintech that provides digital mortgage origination
+  software for banks, lenders, brokers and insurers. Its modular Oper Connect platform connects every
+  stakeholder in the mortgage value chain, and its Herman AI underwriting agent automates document classification,
+  data extraction, verification and credit-policy application to shorten time-to-decision. The Oper Connect
+  API is a JWT-authenticated REST API (Django REST Framework style) exposing loan requests, clients, offers,
+  financial plans, documents and hundreds of configuration resources, plus a versioned Loan Request Webhook
+  API for pushing loan events to lender systems.
 url: https://raw.githubusercontent.com/api-evangelist/oper/refs/heads/main/apis.yml
 deliveryModel:
   model: saas
@@ -43,7 +42,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-09-16'
 tags:
 - Company
 - Vertical Software
@@ -79,8 +78,8 @@ apis:
     url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-appointment-booking-websites-api
   name: Oper Appointment Booking Websites API
-  description: >-
-    The Appointment Booking Websites API from Oper — 2 operation(s) for appointment booking websites.
+  description: The Appointment Booking Websites API from Oper — 2 operation(s) for appointment booking
+    websites.
   humanURL: https://developers.opercredits.com/#/api
   baseURL: https://api.opercredits.com
   tags:
@@ -420,8 +419,7 @@ apis:
     url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-loan-requests-client-info-api
   name: Oper Loan Requests Client Info API
-  description: >-
-    The Loan Requests Client Info API from Oper — 1 operation(s) for loan requests client info.
+  description: The Loan Requests Client Info API from Oper — 1 operation(s) for loan requests client info.
   humanURL: https://developers.opercredits.com/#/api
   baseURL: https://api.opercredits.com
   tags:
@@ -642,7 +640,7 @@ apis:
   - type: Webhooks
     url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-third-party-api-api
-  name: Oper Third Party Api API
+  name: Oper Third Party Api
   description: The Third Party Api API from Oper — 1 operation(s) for third party api.
   humanURL: https://developers.opercredits.com/#/api
   baseURL: https://api.opercredits.com
@@ -759,6 +757,9 @@ common:
   url: llms/oper-llms.txt
 - type: X-MCPServerCandidate
   url: mcp/oper-mcp.yml
-  note: 'Renamed from MCPServer 2026-09-03 (roadmap#247): the manifest self-describes as status: candidate — a tool list derived from the published API contracts, not an existing server. The scorer already read the manifest and reported mcp_server correctly; the MCPServer type was crediting the artifact-type surfaces with a server that does not exist.'
+  note: 'Renamed from MCPServer 2026-09-03 (roadmap#247): the manifest self-describes as status: candidate
+    — a tool list derived from the published API contracts, not an existing server. The scorer already
+    read the manifest and reported mcp_server correctly; the MCPServer type was crediting the artifact-type
+    surfaces with a server that does not exist.'
 - type: AgentSkill
   url: skills/_index.yml
