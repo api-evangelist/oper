@@ -78,8 +78,8 @@ apis:
     url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-appointment-booking-websites-api
   name: Oper Appointment Booking Websites API
-  description: The Appointment Booking Websites API from Oper — 2 operation(s) for appointment booking
-    websites.
+  description: >-
+    The Appointment Booking Websites API from Oper — 2 operation(s) for appointment booking websites.
   humanURL: https://developers.opercredits.com/#/api
   baseURL: https://api.opercredits.com
   tags:
@@ -419,7 +419,8 @@ apis:
     url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-loan-requests-client-info-api
   name: Oper Loan Requests Client Info API
-  description: The Loan Requests Client Info API from Oper — 1 operation(s) for loan requests client info.
+  description: >-
+    The Loan Requests Client Info API from Oper — 1 operation(s) for loan requests client info.
   humanURL: https://developers.opercredits.com/#/api
   baseURL: https://api.opercredits.com
   tags:
@@ -563,18 +564,6 @@ apis:
     url: openapi/oper-sign-in-api-openapi.yml
   - type: Webhooks
     url: openapi/_original/oper-loan-request-webhook.json
-- aid: oper:oper-sign-up-api
-  name: Oper Sign Up API
-  description: The Sign Up API from Oper — 4 operation(s) for sign up.
-  humanURL: https://developers.opercredits.com/#/api
-  baseURL: https://api.opercredits.com
-  tags:
-  - Sign Up
-  properties:
-  - type: OpenAPI
-    url: openapi/oper-sign-up-api-openapi.yml
-  - type: Webhooks
-    url: openapi/_original/oper-loan-request-webhook.json
 - aid: oper:oper-simulators-api
   name: Oper Simulators API
   description: The Simulators API from Oper — 15 operation(s) for simulators.
@@ -701,6 +690,18 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/oper-webhooks-api-openapi.yml
+  - type: Webhooks
+    url: openapi/_original/oper-loan-request-webhook.json
+- aid: oper:oper-signup-api
+  name: Oper Signup API
+  description: The Signup API from Oper — 4 operation(s) for signup.
+  humanURL: https://developers.opercredits.com/#/api
+  baseURL: https://api.opercredits.com
+  tags:
+  - Signup
+  properties:
+  - type: OpenAPI
+    url: openapi/oper-signup-api-openapi.yml
   - type: Webhooks
     url: openapi/_original/oper-loan-request-webhook.json
 maintainers:
