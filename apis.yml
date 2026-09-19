@@ -570,6 +570,8 @@ apis:
   humanURL: https://developers.opercredits.com/#/api
   baseURL: https://api.opercredits.com
   tags:
+  - Simulator
+  tags_raw:
   - Simulators
   properties:
   - type: OpenAPI
@@ -672,6 +674,8 @@ apis:
   humanURL: https://developers.opercredits.com/#/api
   baseURL: https://api.opercredits.com
   tags:
+  - Validator
+  tags_raw:
   - Validators
   properties:
   - type: OpenAPI
@@ -698,6 +702,8 @@ apis:
   humanURL: https://developers.opercredits.com/#/api
   baseURL: https://api.opercredits.com
   tags:
+  - Sign Up
+  tags_raw:
   - Signup
   properties:
   - type: OpenAPI
