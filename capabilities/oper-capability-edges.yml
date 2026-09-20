@@ -11,7 +11,7 @@ capability_model:
   attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
     CC BY 4.0
   notice: NOTICE
-edge_count: 6
+edge_count: 8
 edges:
 - tag: Loan Requests
   spec_file: oper-loan-requests-api-openapi.yml
@@ -34,6 +34,16 @@ edges:
   reason: 'Clearly a banking product factory surface: mortgage base products with base rates, pricing
     sheets, discounts, allowed variabilities and broker whitelists. Evidence spans both parameter/configuration
     and pricing sub-capabilities, so only the L1 is asserted.'
+- tag: Sign In
+  spec_file: oper-sign-in-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: POST /api/sign-in/otp/, POST /api/sign-in/verify/, schemas SignInOtp, RoleTokenObtainPairOtp
+  reason: Authentication endpoints issuing role-scoped tokens with OTP verification and account activation
+    — clearly identity and access management, not a lending capability.
+  recovered_from: sweep-20260829T005356Z-edges.json
 - tag: Loan Requests Client Info
   spec_file: oper-loan-requests-client-info-api-openapi.yml
   capability_id: BC-1320.10
@@ -45,6 +55,16 @@ edges:
   reason: Capture of applicant/borrower and property details attached to a loan request — application
     intake data for credit origination. Some chance it is better read as customer information management,
     hence 0.8.
+- tag: Reset Password
+  spec_file: oper-reset-password-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: POST /api/reset-password/ api_reset_password_create, schema ResetPassword
+  reason: Credential reset for platform user accounts is identity and access management plumbing, not
+    a mortgage business capability.
+  recovered_from: sweep-20260829T005356Z-edges.json
 - tag: Simulators
   spec_file: oper-simulators-api-openapi.yml
   capability_id: BC-1320.10
