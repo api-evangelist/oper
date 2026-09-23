@@ -1,7 +1,7 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
-  title: Oper Agent Documents Easy Audit API
-  version: "1.0"
+  title: Oper Easy Audit API
+  version: ''
 tags:
 - name: Easy Audit
 paths:
@@ -32,6 +32,8 @@ paths:
       - jwtAuth: []
       tags:
       - Easy Audit
+      summary: Api easy audit crud events list
+      x-summary-source: derived
 components:
   schemas:
     EventTypeEnum:
@@ -69,6 +71,31 @@ components:
       - 10
       - 11
       type: integer
+    PaginatedEasyAuditCRUDEventList:
+      properties:
+        count:
+          example: 123
+          type: integer
+        next:
+          example: http://api.example.org/accounts/?page=4
+          format: uri
+          type:
+          - string
+          - 'null'
+        previous:
+          example: http://api.example.org/accounts/?page=2
+          format: uri
+          type:
+          - string
+          - 'null'
+        results:
+          items:
+            $ref: '#/components/schemas/EasyAuditCRUDEvent'
+          type: array
+      required:
+      - count
+      - results
+      type: object
     EasyAuditCRUDEvent:
       properties:
         changed_fields:
@@ -98,8 +125,9 @@ components:
           title: Object representation
           type: string
         user:
-          nullable: true
-          type: integer
+          type:
+          - integer
+          - 'null'
         user_pk_as_string:
           description: String version of the user pk
           maxLength: 255
@@ -110,29 +138,6 @@ components:
       - event_type
       - id
       - object_id
-      type: object
-    PaginatedEasyAuditCRUDEventList:
-      properties:
-        count:
-          example: 123
-          type: integer
-        next:
-          example: http://api.example.org/accounts/?page=4
-          format: uri
-          nullable: true
-          type: string
-        previous:
-          example: http://api.example.org/accounts/?page=2
-          format: uri
-          nullable: true
-          type: string
-        results:
-          items:
-            $ref: '#/components/schemas/EasyAuditCRUDEvent'
-          type: array
-      required:
-      - count
-      - results
       type: object
   securitySchemes:
     jwtAuth:

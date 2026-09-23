@@ -1,7 +1,7 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
-  title: Oper Agent Documents Legal Links API
-  version: "1.0"
+  title: Oper Legal Links API
+  version: ''
 tags:
 - name: Legal Links
 paths:
@@ -21,6 +21,8 @@ paths:
       - jwtAuth: []
       tags:
       - Legal Links
+      summary: Api legal links list
+      x-summary-source: derived
   /api/legal-links/{language__definition}/:
     get:
       operationId: api_legal_links_retrieve
@@ -41,34 +43,10 @@ paths:
       - jwtAuth: []
       tags:
       - Legal Links
+      summary: Api legal links retrieve
+      x-summary-source: derived
 components:
   schemas:
-    LegalLink:
-      properties:
-        display_text:
-          maxLength: 128
-          type: string
-        id:
-          readOnly: true
-          type: integer
-        language:
-          $ref: '#/components/schemas/Language'
-        legal_link_type:
-          nullable: true
-          type: integer
-        tenant:
-          nullable: true
-          type: integer
-        url:
-          format: uri
-          maxLength: 1024
-          type: string
-      required:
-      - display_text
-      - id
-      - language
-      - url
-      type: object
     Language:
       description: Can be managed at /resources/language
       properties:
@@ -83,6 +61,34 @@ components:
       - definition
       - id
       - order
+      type: object
+    LegalLink:
+      properties:
+        display_text:
+          maxLength: 128
+          type: string
+        id:
+          readOnly: true
+          type: integer
+        language:
+          $ref: '#/components/schemas/Language'
+        legal_link_type:
+          type:
+          - integer
+          - 'null'
+        tenant:
+          type:
+          - integer
+          - 'null'
+        url:
+          format: uri
+          maxLength: 1024
+          type: string
+      required:
+      - display_text
+      - id
+      - language
+      - url
       type: object
   securitySchemes:
     jwtAuth:

@@ -1,7 +1,7 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
-  title: Oper Agent Documents Library API
-  version: "1.0"
+  title: Oper Library API
+  version: ''
 tags:
 - name: Library
 paths:
@@ -21,6 +21,8 @@ paths:
       - jwtAuth: []
       tags:
       - Library
+      summary: Api library documents list
+      x-summary-source: derived
   /api/library/documents/{id}/:
     get:
       operationId: api_library_documents_retrieve
@@ -41,6 +43,8 @@ paths:
       - jwtAuth: []
       tags:
       - Library
+      summary: Api library documents retrieve
+      x-summary-source: derived
 components:
   schemas:
     NestedSignedDocument:
@@ -60,21 +64,6 @@ components:
       - mime_type
       - url
       type: object
-    LibraryCategory:
-      description: Can be managed at /resources/library-category
-      properties:
-        definition:
-          type: string
-        id:
-          type: integer
-        order:
-          readOnly: true
-          type: integer
-      required:
-      - definition
-      - id
-      - order
-      type: object
     LibraryDocument:
       properties:
         category:
@@ -93,6 +82,21 @@ components:
       type: object
     Language:
       description: Can be managed at /resources/language
+      properties:
+        definition:
+          type: string
+        id:
+          type: integer
+        order:
+          readOnly: true
+          type: integer
+      required:
+      - definition
+      - id
+      - order
+      type: object
+    LibraryCategory:
+      description: Can be managed at /resources/library-category
       properties:
         definition:
           type: string

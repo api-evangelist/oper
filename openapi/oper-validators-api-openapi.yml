@@ -1,7 +1,7 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
-  title: Oper Agent Documents Validators API
-  version: "1.0"
+  title: Oper Validators API
+  version: ''
 tags:
 - name: Validators
 paths:
@@ -32,6 +32,8 @@ paths:
       - {}
       tags:
       - Validators
+      summary: Api validators belgian national number create
+      x-summary-source: derived
 components:
   schemas:
     NationalNumber:

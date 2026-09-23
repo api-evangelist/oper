@@ -1,7 +1,7 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
-  title: Oper Agent Documents Main API
-  version: "1.0"
+  title: Oper Main API
+  version: ''
 tags:
 - name: Main
 paths:
@@ -21,6 +21,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main addresses list
+      x-summary-source: derived
     post:
       operationId: api_main_addresses_create
       requestBody:
@@ -46,6 +48,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main addresses create
+      x-summary-source: derived
   /api/main/addresses/{id}/:
     delete:
       operationId: api_main_addresses_destroy
@@ -63,6 +67,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main addresses destroy
+      x-summary-source: derived
     get:
       operationId: api_main_addresses_retrieve
       parameters:
@@ -83,6 +89,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main addresses retrieve
+      x-summary-source: derived
     patch:
       operationId: api_main_addresses_partial_update
       parameters:
@@ -114,6 +122,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main addresses partial update
+      x-summary-source: derived
     put:
       operationId: api_main_addresses_update
       parameters:
@@ -146,6 +156,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main addresses update
+      x-summary-source: derived
   /api/main/application-users/:
     get:
       operationId: api_main_application_users_list
@@ -162,6 +174,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main application users list
+      x-summary-source: derived
     post:
       operationId: api_main_application_users_create
       requestBody:
@@ -187,6 +201,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main application users create
+      x-summary-source: derived
   /api/main/application-users/{id}/:
     delete:
       operationId: api_main_application_users_destroy
@@ -204,6 +220,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main application users destroy
+      x-summary-source: derived
     get:
       operationId: api_main_application_users_retrieve
       parameters:
@@ -224,6 +242,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main application users retrieve
+      x-summary-source: derived
     patch:
       operationId: api_main_application_users_partial_update
       parameters:
@@ -255,6 +275,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main application users partial update
+      x-summary-source: derived
     put:
       operationId: api_main_application_users_update
       parameters:
@@ -287,6 +309,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main application users update
+      x-summary-source: derived
   /api/main/bank-branches/:
     post:
       operationId: api_main_bank_branches_create
@@ -313,6 +337,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main bank branches create
+      x-summary-source: derived
   /api/main/bank-branches/{id}/:
     patch:
       operationId: api_main_bank_branches_partial_update
@@ -345,6 +371,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main bank branches partial update
+      x-summary-source: derived
     put:
       operationId: api_main_bank_branches_update
       parameters:
@@ -377,6 +405,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main bank branches update
+      x-summary-source: derived
   /api/main/base-users/:
     get:
       operationId: api_main_base_users_list
@@ -393,6 +423,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main base users list
+      x-summary-source: derived
     post:
       operationId: api_main_base_users_create
       requestBody:
@@ -418,6 +450,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main base users create
+      x-summary-source: derived
   /api/main/base-users/{id}/:
     delete:
       operationId: api_main_base_users_destroy
@@ -435,6 +469,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main base users destroy
+      x-summary-source: derived
     get:
       operationId: api_main_base_users_retrieve
       parameters:
@@ -455,6 +491,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main base users retrieve
+      x-summary-source: derived
     patch:
       operationId: api_main_base_users_partial_update
       parameters:
@@ -486,6 +524,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main base users partial update
+      x-summary-source: derived
     put:
       operationId: api_main_base_users_update
       parameters:
@@ -518,6 +558,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main base users update
+      x-summary-source: derived
   /api/main/client-users/:
     get:
       operationId: api_main_client_users_list
@@ -534,6 +576,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main client users list
+      x-summary-source: derived
     post:
       operationId: api_main_client_users_create
       requestBody:
@@ -559,6 +603,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main client users create
+      x-summary-source: derived
   /api/main/client-users/{id}/:
     delete:
       operationId: api_main_client_users_destroy
@@ -576,6 +622,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main client users destroy
+      x-summary-source: derived
     get:
       operationId: api_main_client_users_retrieve
       parameters:
@@ -596,6 +644,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main client users retrieve
+      x-summary-source: derived
     patch:
       operationId: api_main_client_users_partial_update
       parameters:
@@ -627,6 +677,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main client users partial update
+      x-summary-source: derived
     put:
       operationId: api_main_client_users_update
       parameters:
@@ -659,6 +711,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main client users update
+      x-summary-source: derived
   /api/main/content-types/:
     get:
       operationId: api_main_content_types_list
@@ -675,6 +729,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main content types list
+      x-summary-source: derived
   /api/main/content-types/{id}/:
     get:
       operationId: api_main_content_types_retrieve
@@ -696,6 +752,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main content types retrieve
+      x-summary-source: derived
   /api/main/emails/:
     get:
       operationId: api_main_emails_list
@@ -712,6 +770,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main emails list
+      x-summary-source: derived
     post:
       operationId: api_main_emails_create
       requestBody:
@@ -737,6 +797,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main emails create
+      x-summary-source: derived
   /api/main/emails/{id}/:
     delete:
       operationId: api_main_emails_destroy
@@ -754,6 +816,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main emails destroy
+      x-summary-source: derived
     get:
       operationId: api_main_emails_retrieve
       parameters:
@@ -774,6 +838,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main emails retrieve
+      x-summary-source: derived
     patch:
       operationId: api_main_emails_partial_update
       parameters:
@@ -805,6 +871,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main emails partial update
+      x-summary-source: derived
     put:
       operationId: api_main_emails_update
       parameters:
@@ -837,6 +905,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main emails update
+      x-summary-source: derived
   /api/main/groups/:
     get:
       operationId: api_main_groups_list
@@ -853,6 +923,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main groups list
+      x-summary-source: derived
     post:
       operationId: api_main_groups_create
       requestBody:
@@ -878,6 +950,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main groups create
+      x-summary-source: derived
   /api/main/groups/{id}/:
     delete:
       operationId: api_main_groups_destroy
@@ -895,6 +969,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main groups destroy
+      x-summary-source: derived
     get:
       operationId: api_main_groups_retrieve
       parameters:
@@ -915,6 +991,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main groups retrieve
+      x-summary-source: derived
     patch:
       operationId: api_main_groups_partial_update
       parameters:
@@ -946,6 +1024,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main groups partial update
+      x-summary-source: derived
     put:
       operationId: api_main_groups_update
       parameters:
@@ -978,6 +1058,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main groups update
+      x-summary-source: derived
   /api/main/permissions/:
     get:
       operationId: api_main_permissions_list
@@ -994,6 +1076,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main permissions list
+      x-summary-source: derived
     post:
       operationId: api_main_permissions_create
       requestBody:
@@ -1019,6 +1103,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main permissions create
+      x-summary-source: derived
   /api/main/permissions/{id}/:
     delete:
       operationId: api_main_permissions_destroy
@@ -1036,6 +1122,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main permissions destroy
+      x-summary-source: derived
     get:
       operationId: api_main_permissions_retrieve
       parameters:
@@ -1056,6 +1144,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main permissions retrieve
+      x-summary-source: derived
     patch:
       operationId: api_main_permissions_partial_update
       parameters:
@@ -1087,6 +1177,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main permissions partial update
+      x-summary-source: derived
     put:
       operationId: api_main_permissions_update
       parameters:
@@ -1119,6 +1211,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main permissions update
+      x-summary-source: derived
   /api/main/phones/:
     get:
       operationId: api_main_phones_list
@@ -1135,6 +1229,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main phones list
+      x-summary-source: derived
     post:
       operationId: api_main_phones_create
       requestBody:
@@ -1160,6 +1256,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main phones create
+      x-summary-source: derived
   /api/main/phones/{id}/:
     delete:
       operationId: api_main_phones_destroy
@@ -1177,6 +1275,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main phones destroy
+      x-summary-source: derived
     get:
       operationId: api_main_phones_retrieve
       parameters:
@@ -1197,6 +1297,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main phones retrieve
+      x-summary-source: derived
     patch:
       operationId: api_main_phones_partial_update
       parameters:
@@ -1228,6 +1330,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main phones partial update
+      x-summary-source: derived
     put:
       operationId: api_main_phones_update
       parameters:
@@ -1260,6 +1364,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main phones update
+      x-summary-source: derived
   /api/main/profile-addresses/:
     get:
       operationId: api_main_profile_addresses_list
@@ -1276,6 +1382,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main profile addresses list
+      x-summary-source: derived
     post:
       operationId: api_main_profile_addresses_create
       requestBody:
@@ -1301,6 +1409,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main profile addresses create
+      x-summary-source: derived
   /api/main/profile-addresses/{id}/:
     delete:
       operationId: api_main_profile_addresses_destroy
@@ -1318,6 +1428,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main profile addresses destroy
+      x-summary-source: derived
     get:
       operationId: api_main_profile_addresses_retrieve
       parameters:
@@ -1338,6 +1450,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main profile addresses retrieve
+      x-summary-source: derived
     patch:
       operationId: api_main_profile_addresses_partial_update
       parameters:
@@ -1369,6 +1483,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main profile addresses partial update
+      x-summary-source: derived
     put:
       operationId: api_main_profile_addresses_update
       parameters:
@@ -1401,6 +1517,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main profile addresses update
+      x-summary-source: derived
   /api/main/profile-emails/:
     get:
       operationId: api_main_profile_emails_list
@@ -1417,6 +1535,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main profile emails list
+      x-summary-source: derived
     post:
       operationId: api_main_profile_emails_create
       requestBody:
@@ -1442,6 +1562,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main profile emails create
+      x-summary-source: derived
   /api/main/profile-emails/{id}/:
     delete:
       operationId: api_main_profile_emails_destroy
@@ -1459,6 +1581,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main profile emails destroy
+      x-summary-source: derived
     get:
       operationId: api_main_profile_emails_retrieve
       parameters:
@@ -1479,6 +1603,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main profile emails retrieve
+      x-summary-source: derived
     patch:
       operationId: api_main_profile_emails_partial_update
       parameters:
@@ -1510,6 +1636,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main profile emails partial update
+      x-summary-source: derived
     put:
       operationId: api_main_profile_emails_update
       parameters:
@@ -1542,6 +1670,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main profile emails update
+      x-summary-source: derived
   /api/main/profile-phones/:
     get:
       operationId: api_main_profile_phones_list
@@ -1558,6 +1688,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main profile phones list
+      x-summary-source: derived
     post:
       operationId: api_main_profile_phones_create
       requestBody:
@@ -1583,6 +1715,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main profile phones create
+      x-summary-source: derived
   /api/main/profile-phones/{id}/:
     delete:
       operationId: api_main_profile_phones_destroy
@@ -1600,6 +1734,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main profile phones destroy
+      x-summary-source: derived
     get:
       operationId: api_main_profile_phones_retrieve
       parameters:
@@ -1620,6 +1756,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main profile phones retrieve
+      x-summary-source: derived
     patch:
       operationId: api_main_profile_phones_partial_update
       parameters:
@@ -1651,6 +1789,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main profile phones partial update
+      x-summary-source: derived
     put:
       operationId: api_main_profile_phones_update
       parameters:
@@ -1683,6 +1823,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main profile phones update
+      x-summary-source: derived
   /api/main/user-credit-providers/:
     get:
       operationId: api_main_user_credit_providers_list
@@ -1699,6 +1841,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main user credit providers list
+      x-summary-source: derived
     post:
       operationId: api_main_user_credit_providers_create
       requestBody:
@@ -1724,6 +1868,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main user credit providers create
+      x-summary-source: derived
   /api/main/user-credit-providers/{id}/:
     delete:
       operationId: api_main_user_credit_providers_destroy
@@ -1741,6 +1887,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main user credit providers destroy
+      x-summary-source: derived
     get:
       operationId: api_main_user_credit_providers_retrieve
       parameters:
@@ -1761,6 +1909,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main user credit providers retrieve
+      x-summary-source: derived
     patch:
       operationId: api_main_user_credit_providers_partial_update
       parameters:
@@ -1792,6 +1942,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main user credit providers partial update
+      x-summary-source: derived
     put:
       operationId: api_main_user_credit_providers_update
       parameters:
@@ -1824,6 +1976,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main user credit providers update
+      x-summary-source: derived
   /api/main/user-profiles/:
     get:
       operationId: api_main_user_profiles_list
@@ -1845,6 +1999,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main user profiles list
+      x-summary-source: derived
     post:
       operationId: api_main_user_profiles_create
       requestBody:
@@ -1870,6 +2026,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main user profiles create
+      x-summary-source: derived
   /api/main/user-profiles/{id}/:
     delete:
       operationId: api_main_user_profiles_destroy
@@ -1887,6 +2045,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main user profiles destroy
+      x-summary-source: derived
     get:
       operationId: api_main_user_profiles_retrieve
       parameters:
@@ -1907,6 +2067,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main user profiles retrieve
+      x-summary-source: derived
     patch:
       operationId: api_main_user_profiles_partial_update
       parameters:
@@ -1938,6 +2100,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main user profiles partial update
+      x-summary-source: derived
     put:
       operationId: api_main_user_profiles_update
       parameters:
@@ -1970,6 +2134,8 @@ paths:
       - jwtAuth: []
       tags:
       - Main
+      summary: Api main user profiles update
+      x-summary-source: derived
 components:
   schemas:
     Profile2EmailAuto:
@@ -1989,48 +2155,171 @@ components:
       - id
       - profile
       type: object
-    PatchedUserProfileAuto:
+    PatchedAddressAuto:
       properties:
-        birth_city:
-          maxLength: 128
+        box:
+          maxLength: 64
           type: string
-        birth_date:
-          format: date
-          nullable: true
+        building:
+          default: ''
+          maxLength: 64
           type: string
-        first_name:
+        city:
+          maxLength: 64
+          type: string
+        country:
+          type:
+          - integer
+          - 'null'
+        floor:
+          maxLength: 64
+          type: string
+        heading:
+          format: double
+          type:
+          - number
+          - 'null'
+          exclusiveMinimum: -100000
+          exclusiveMaximum: 100000
+        house_number:
           maxLength: 64
           type: string
         id:
           readOnly: true
           type: integer
-        last_name:
-          maxLength: 128
-          type: string
-        middle_name:
+        latitude:
+          format: double
+          type:
+          - number
+          - 'null'
+          exclusiveMinimum: -100000
+          exclusiveMaximum: 100000
+        longitude:
+          format: double
+          type:
+          - number
+          - 'null'
+          exclusiveMinimum: -100000
+          exclusiveMaximum: 100000
+        pitch:
+          format: double
+          type:
+          - number
+          - 'null'
+          exclusiveMinimum: -100000
+          exclusiveMaximum: 100000
+        staircase:
+          default: ''
           maxLength: 64
           type: string
-        mother_maiden_name:
-          maxLength: 128
+        street:
+          maxLength: 64
           type: string
-        oper_reference:
-          format: uuid
+        street_type:
+          type:
+          - integer
+          - 'null'
+        zip_code:
+          maxLength: 8
           type: string
-        title:
-          nullable: true
-          type: integer
-        title2:
-          nullable: true
-          type: integer
-        user:
-          type: integer
+        zoom:
+          format: double
+          type:
+          - number
+          - 'null'
+          exclusiveMinimum: -100000
+          exclusiveMaximum: 100000
       type: object
-    BaseUserCrud:
+    AddressAuto:
+      properties:
+        box:
+          maxLength: 64
+          type: string
+        building:
+          default: ''
+          maxLength: 64
+          type: string
+        city:
+          maxLength: 64
+          type: string
+        country:
+          type:
+          - integer
+          - 'null'
+        floor:
+          maxLength: 64
+          type: string
+        heading:
+          format: double
+          type:
+          - number
+          - 'null'
+          exclusiveMinimum: -100000
+          exclusiveMaximum: 100000
+        house_number:
+          maxLength: 64
+          type: string
+        id:
+          readOnly: true
+          type: integer
+        latitude:
+          format: double
+          type:
+          - number
+          - 'null'
+          exclusiveMinimum: -100000
+          exclusiveMaximum: 100000
+        longitude:
+          format: double
+          type:
+          - number
+          - 'null'
+          exclusiveMinimum: -100000
+          exclusiveMaximum: 100000
+        pitch:
+          format: double
+          type:
+          - number
+          - 'null'
+          exclusiveMinimum: -100000
+          exclusiveMaximum: 100000
+        staircase:
+          default: ''
+          maxLength: 64
+          type: string
+        street:
+          maxLength: 64
+          type: string
+        street_type:
+          type:
+          - integer
+          - 'null'
+        zip_code:
+          maxLength: 8
+          type: string
+        zoom:
+          format: double
+          type:
+          - number
+          - 'null'
+          exclusiveMinimum: -100000
+          exclusiveMaximum: 100000
+      required:
+      - box
+      - city
+      - floor
+      - house_number
+      - id
+      - street
+      - zip_code
+      type: object
+    PatchedClientUserCrud:
       properties:
         away_until:
           format: date
-          nullable: true
-          type: string
+          type:
+          - string
+          - 'null'
         date_joined:
           format: date-time
           type: string
@@ -2040,12 +2329,14 @@ components:
           title: Email address
           type: string
         enrichment_status:
-          nullable: true
-          type: integer
+          type:
+          - integer
+          - 'null'
         enrichment_status_updated_at:
           format: date-time
-          nullable: true
-          type: string
+          type:
+          - string
+          - 'null'
         external_id:
           maxLength: 64
           type: string
@@ -2075,8 +2366,9 @@ components:
           type: integer
         last_login:
           format: date-time
-          nullable: true
-          type: string
+          type:
+          - string
+          - 'null'
         oper_reference:
           format: uuid
           type: string
@@ -2089,8 +2381,560 @@ components:
           type: integer
         updated_password_at:
           format: date-time
-          nullable: true
+          type:
+          - string
+          - 'null'
+        user_permissions:
+          description: Specific permissions for this user.
+          items:
+            type: integer
+          type: array
+        verified:
+          type: boolean
+      type: object
+    ApplicationUserCrud:
+      properties:
+        away_until:
+          format: date
+          type:
+          - string
+          - 'null'
+        date_joined:
+          format: date-time
           type: string
+        email:
+          format: email
+          maxLength: 254
+          title: Email address
+          type: string
+        email_task_subscription:
+          type: boolean
+        enrichment_status:
+          type:
+          - integer
+          - 'null'
+        enrichment_status_updated_at:
+          format: date-time
+          type:
+          - string
+          - 'null'
+        external_id:
+          maxLength: 64
+          type: string
+        groups:
+          description: The groups this user belongs to. A user will get all permissions granted to each of their groups.
+          items:
+            type: integer
+          type: array
+        id:
+          readOnly: true
+          type: integer
+        is_active:
+          description: Designates whether this user should be treated as active. Unselect this instead of deleting accounts.
+          title: Active
+          type: boolean
+        is_available:
+          type: boolean
+        is_staff:
+          description: Designates whether the user can log into this admin site.
+          title: Staff status
+          type: boolean
+        is_superuser:
+          description: Designates that this user has all permissions without explicitly assigning them.
+          title: Superuser status
+          type: boolean
+        last_language:
+          type: integer
+        last_login:
+          format: date-time
+          type:
+          - string
+          - 'null'
+        oper_reference:
+          format: uuid
+          type: string
+        password:
+          type: string
+          writeOnly: true
+        preferred_language:
+          type: integer
+        role:
+          type: integer
+        updated_password_at:
+          format: date-time
+          type:
+          - string
+          - 'null'
+        user_permissions:
+          description: Specific permissions for this user.
+          items:
+            type: integer
+          type: array
+        verified:
+          type: boolean
+      required:
+      - email
+      - id
+      - last_language
+      - preferred_language
+      - role
+      type: object
+    PatchedProfile2PhoneAuto:
+      properties:
+        id:
+          readOnly: true
+          type: integer
+        is_secret:
+          type: boolean
+        phone_number:
+          type: integer
+        phone_type:
+          type: integer
+        profile:
+          type: integer
+      type: object
+    PatchedProfile2EmailAuto:
+      properties:
+        email:
+          type: integer
+        email_type:
+          type: integer
+        id:
+          readOnly: true
+          type: integer
+        profile:
+          type: integer
+      type: object
+    PatchedPhoneAuto:
+      properties:
+        country_code:
+          type: integer
+        id:
+          readOnly: true
+          type: integer
+        value:
+          maxLength: 32
+          type: string
+      type: object
+    BaseUserCrud:
+      properties:
+        away_until:
+          format: date
+          type:
+          - string
+          - 'null'
+        date_joined:
+          format: date-time
+          type: string
+        email:
+          format: email
+          maxLength: 254
+          title: Email address
+          type: string
+        enrichment_status:
+          type:
+          - integer
+          - 'null'
+        enrichment_status_updated_at:
+          format: date-time
+          type:
+          - string
+          - 'null'
+        external_id:
+          maxLength: 64
+          type: string
+        groups:
+          description: The groups this user belongs to. A user will get all permissions granted to each of their groups.
+          items:
+            type: integer
+          type: array
+        id:
+          readOnly: true
+          type: integer
+        is_active:
+          description: Designates whether this user should be treated as active. Unselect this instead of deleting accounts.
+          title: Active
+          type: boolean
+        is_available:
+          type: boolean
+        is_staff:
+          description: Designates whether the user can log into this admin site.
+          title: Staff status
+          type: boolean
+        is_superuser:
+          description: Designates that this user has all permissions without explicitly assigning them.
+          title: Superuser status
+          type: boolean
+        last_language:
+          type: integer
+        last_login:
+          format: date-time
+          type:
+          - string
+          - 'null'
+        oper_reference:
+          format: uuid
+          type: string
+        password:
+          type: string
+          writeOnly: true
+        preferred_language:
+          type: integer
+        role:
+          type: integer
+        updated_password_at:
+          format: date-time
+          type:
+          - string
+          - 'null'
+        user_permissions:
+          description: Specific permissions for this user.
+          items:
+            type: integer
+          type: array
+        verified:
+          type: boolean
+      required:
+      - email
+      - id
+      - last_language
+      - preferred_language
+      - role
+      type: object
+    BankBranchAuto:
+      properties:
+        configuration_id:
+          format: uuid
+          type: string
+        definition:
+          maxLength: 128
+          type: string
+        id:
+          readOnly: true
+          type: integer
+        order:
+          maximum: 2147483647
+          minimum: 0
+          type:
+          - integer
+          - 'null'
+      required:
+      - definition
+      - id
+      type: object
+    UserProfileAuto:
+      properties:
+        birth_city:
+          maxLength: 128
+          type: string
+        birth_date:
+          format: date
+          type:
+          - string
+          - 'null'
+        first_name:
+          maxLength: 64
+          type: string
+        id:
+          readOnly: true
+          type: integer
+        last_name:
+          maxLength: 128
+          type: string
+        middle_name:
+          maxLength: 64
+          type: string
+        mother_maiden_name:
+          maxLength: 128
+          type: string
+        oper_reference:
+          format: uuid
+          type: string
+        title:
+          type:
+          - integer
+          - 'null'
+        title2:
+          type:
+          - integer
+          - 'null'
+        user:
+          type: integer
+      required:
+      - id
+      - user
+      type: object
+    PatchedUser2CreditProviderAuto:
+      properties:
+        bank_id:
+          maxLength: 64
+          type: string
+        credit_provider:
+          type:
+          - integer
+          - 'null'
+        id:
+          readOnly: true
+          type: integer
+        user:
+          type: integer
+      type: object
+    ContentTypeAuto:
+      properties:
+        app_label:
+          maxLength: 100
+          type: string
+        id:
+          readOnly: true
+          type: integer
+        model:
+          maxLength: 100
+          title: Python model class name
+          type: string
+      required:
+      - app_label
+      - id
+      - model
+      type: object
+    PatchedEmailAuto:
+      properties:
+        id:
+          readOnly: true
+          type: integer
+        value:
+          format: email
+          maxLength: 254
+          type: string
+      type: object
+    PatchedGroupAuto:
+      properties:
+        id:
+          readOnly: true
+          type: integer
+        name:
+          maxLength: 150
+          type: string
+        permissions:
+          items:
+            type: integer
+          type: array
+      type: object
+    PatchedProfile2AddressAuto:
+      properties:
+        address:
+          type: integer
+        address_type:
+          type: integer
+        id:
+          readOnly: true
+          type: integer
+        profile:
+          type: integer
+      type: object
+    PatchedUserProfileAuto:
+      properties:
+        birth_city:
+          maxLength: 128
+          type: string
+        birth_date:
+          format: date
+          type:
+          - string
+          - 'null'
+        first_name:
+          maxLength: 64
+          type: string
+        id:
+          readOnly: true
+          type: integer
+        last_name:
+          maxLength: 128
+          type: string
+        middle_name:
+          maxLength: 64
+          type: string
+        mother_maiden_name:
+          maxLength: 128
+          type: string
+        oper_reference:
+          format: uuid
+          type: string
+        title:
+          type:
+          - integer
+          - 'null'
+        title2:
+          type:
+          - integer
+          - 'null'
+        user:
+          type: integer
+      type: object
+    PhoneAuto:
+      properties:
+        country_code:
+          type: integer
+        id:
+          readOnly: true
+          type: integer
+        value:
+          maxLength: 32
+          type: string
+      required:
+      - country_code
+      - id
+      - value
+      type: object
+    PatchedBaseUserCrud:
+      properties:
+        away_until:
+          format: date
+          type:
+          - string
+          - 'null'
+        date_joined:
+          format: date-time
+          type: string
+        email:
+          format: email
+          maxLength: 254
+          title: Email address
+          type: string
+        enrichment_status:
+          type:
+          - integer
+          - 'null'
+        enrichment_status_updated_at:
+          format: date-time
+          type:
+          - string
+          - 'null'
+        external_id:
+          maxLength: 64
+          type: string
+        groups:
+          description: The groups this user belongs to. A user will get all permissions granted to each of their groups.
+          items:
+            type: integer
+          type: array
+        id:
+          readOnly: true
+          type: integer
+        is_active:
+          description: Designates whether this user should be treated as active. Unselect this instead of deleting accounts.
+          title: Active
+          type: boolean
+        is_available:
+          type: boolean
+        is_staff:
+          description: Designates whether the user can log into this admin site.
+          title: Staff status
+          type: boolean
+        is_superuser:
+          description: Designates that this user has all permissions without explicitly assigning them.
+          title: Superuser status
+          type: boolean
+        last_language:
+          type: integer
+        last_login:
+          format: date-time
+          type:
+          - string
+          - 'null'
+        oper_reference:
+          format: uuid
+          type: string
+        password:
+          type: string
+          writeOnly: true
+        preferred_language:
+          type: integer
+        role:
+          type: integer
+        updated_password_at:
+          format: date-time
+          type:
+          - string
+          - 'null'
+        user_permissions:
+          description: Specific permissions for this user.
+          items:
+            type: integer
+          type: array
+        verified:
+          type: boolean
+      type: object
+    ClientUserCrud:
+      properties:
+        away_until:
+          format: date
+          type:
+          - string
+          - 'null'
+        date_joined:
+          format: date-time
+          type: string
+        email:
+          format: email
+          maxLength: 254
+          title: Email address
+          type: string
+        enrichment_status:
+          type:
+          - integer
+          - 'null'
+        enrichment_status_updated_at:
+          format: date-time
+          type:
+          - string
+          - 'null'
+        external_id:
+          maxLength: 64
+          type: string
+        groups:
+          description: The groups this user belongs to. A user will get all permissions granted to each of their groups.
+          items:
+            type: integer
+          type: array
+        id:
+          readOnly: true
+          type: integer
+        is_active:
+          description: Designates whether this user should be treated as active. Unselect this instead of deleting accounts.
+          title: Active
+          type: boolean
+        is_available:
+          type: boolean
+        is_staff:
+          description: Designates whether the user can log into this admin site.
+          title: Staff status
+          type: boolean
+        is_superuser:
+          description: Designates that this user has all permissions without explicitly assigning them.
+          title: Superuser status
+          type: boolean
+        last_language:
+          type: integer
+        last_login:
+          format: date-time
+          type:
+          - string
+          - 'null'
+        oper_reference:
+          format: uuid
+          type: string
+        password:
+          type: string
+          writeOnly: true
+        preferred_language:
+          type: integer
+        role:
+          type: integer
+        updated_password_at:
+          format: date-time
+          type:
+          - string
+          - 'null'
         user_permissions:
           description: Specific permissions for this user.
           items:
@@ -2111,8 +2955,9 @@ components:
           maxLength: 64
           type: string
         credit_provider:
-          nullable: true
-          type: integer
+          type:
+          - integer
+          - 'null'
         id:
           readOnly: true
           type: integer
@@ -2122,66 +2967,6 @@ components:
       - bank_id
       - id
       - user
-      type: object
-    EmailAuto:
-      properties:
-        id:
-          readOnly: true
-          type: integer
-        value:
-          format: email
-          maxLength: 254
-          type: string
-      required:
-      - id
-      - value
-      type: object
-    BankBranchAuto:
-      properties:
-        configuration_id:
-          format: uuid
-          type: string
-        definition:
-          maxLength: 128
-          type: string
-        id:
-          readOnly: true
-          type: integer
-        order:
-          maximum: 2147483647
-          minimum: 0
-          nullable: true
-          type: integer
-      required:
-      - definition
-      - id
-      type: object
-    PatchedEmailAuto:
-      properties:
-        id:
-          readOnly: true
-          type: integer
-        value:
-          format: email
-          maxLength: 254
-          type: string
-      type: object
-    ContentTypeAuto:
-      properties:
-        app_label:
-          maxLength: 100
-          type: string
-        id:
-          readOnly: true
-          type: integer
-        model:
-          maxLength: 100
-          title: Python model class name
-          type: string
-      required:
-      - app_label
-      - id
-      - model
       type: object
     GroupAuto:
       properties:
@@ -2199,347 +2984,67 @@ components:
       - id
       - name
       type: object
-    PatchedPhoneAuto:
+    PatchedPermissionAuto:
       properties:
-        country_code:
+        codename:
+          maxLength: 100
+          type: string
+        content_type:
           type: integer
         id:
           readOnly: true
           type: integer
-        value:
-          maxLength: 32
+        name:
+          maxLength: 255
           type: string
       type: object
-    PatchedApplicationUserCrud:
+    Profile2AddressAuto:
       properties:
-        away_until:
-          format: date
-          nullable: true
-          type: string
-        date_joined:
-          format: date-time
-          type: string
-        email:
-          format: email
-          maxLength: 254
-          title: Email address
-          type: string
-        email_task_subscription:
-          type: boolean
-        enrichment_status:
-          nullable: true
+        address:
           type: integer
-        enrichment_status_updated_at:
-          format: date-time
-          nullable: true
-          type: string
-        external_id:
-          maxLength: 64
-          type: string
-        groups:
-          description: The groups this user belongs to. A user will get all permissions granted to each of their groups.
-          items:
-            type: integer
-          type: array
-        id:
-          readOnly: true
-          type: integer
-        is_active:
-          description: Designates whether this user should be treated as active. Unselect this instead of deleting accounts.
-          title: Active
-          type: boolean
-        is_available:
-          type: boolean
-        is_staff:
-          description: Designates whether the user can log into this admin site.
-          title: Staff status
-          type: boolean
-        is_superuser:
-          description: Designates that this user has all permissions without explicitly assigning them.
-          title: Superuser status
-          type: boolean
-        last_language:
-          type: integer
-        last_login:
-          format: date-time
-          nullable: true
-          type: string
-        oper_reference:
-          format: uuid
-          type: string
-        password:
-          type: string
-          writeOnly: true
-        preferred_language:
-          type: integer
-        role:
-          type: integer
-        updated_password_at:
-          format: date-time
-          nullable: true
-          type: string
-        user_permissions:
-          description: Specific permissions for this user.
-          items:
-            type: integer
-          type: array
-        verified:
-          type: boolean
-      type: object
-    PatchedProfile2EmailAuto:
-      properties:
-        email:
-          type: integer
-        email_type:
+        address_type:
           type: integer
         id:
           readOnly: true
           type: integer
         profile:
           type: integer
-      type: object
-    PatchedGroupAuto:
-      properties:
-        id:
-          readOnly: true
-          type: integer
-        name:
-          maxLength: 150
-          type: string
-        permissions:
-          items:
-            type: integer
-          type: array
-      type: object
-    PatchedUser2CreditProviderAuto:
-      properties:
-        bank_id:
-          maxLength: 64
-          type: string
-        credit_provider:
-          nullable: true
-          type: integer
-        id:
-          readOnly: true
-          type: integer
-        user:
-          type: integer
-      type: object
-    ApplicationUserCrud:
-      properties:
-        away_until:
-          format: date
-          nullable: true
-          type: string
-        date_joined:
-          format: date-time
-          type: string
-        email:
-          format: email
-          maxLength: 254
-          title: Email address
-          type: string
-        email_task_subscription:
-          type: boolean
-        enrichment_status:
-          nullable: true
-          type: integer
-        enrichment_status_updated_at:
-          format: date-time
-          nullable: true
-          type: string
-        external_id:
-          maxLength: 64
-          type: string
-        groups:
-          description: The groups this user belongs to. A user will get all permissions granted to each of their groups.
-          items:
-            type: integer
-          type: array
-        id:
-          readOnly: true
-          type: integer
-        is_active:
-          description: Designates whether this user should be treated as active. Unselect this instead of deleting accounts.
-          title: Active
-          type: boolean
-        is_available:
-          type: boolean
-        is_staff:
-          description: Designates whether the user can log into this admin site.
-          title: Staff status
-          type: boolean
-        is_superuser:
-          description: Designates that this user has all permissions without explicitly assigning them.
-          title: Superuser status
-          type: boolean
-        last_language:
-          type: integer
-        last_login:
-          format: date-time
-          nullable: true
-          type: string
-        oper_reference:
-          format: uuid
-          type: string
-        password:
-          type: string
-          writeOnly: true
-        preferred_language:
-          type: integer
-        role:
-          type: integer
-        updated_password_at:
-          format: date-time
-          nullable: true
-          type: string
-        user_permissions:
-          description: Specific permissions for this user.
-          items:
-            type: integer
-          type: array
-        verified:
-          type: boolean
       required:
-      - email
+      - address
+      - address_type
       - id
-      - last_language
-      - preferred_language
-      - role
+      - profile
       type: object
-    UserProfileAuto:
+    EmailAuto:
       properties:
-        birth_city:
-          maxLength: 128
-          type: string
-        birth_date:
-          format: date
-          nullable: true
-          type: string
-        first_name:
-          maxLength: 64
-          type: string
-        id:
-          readOnly: true
-          type: integer
-        last_name:
-          maxLength: 128
-          type: string
-        middle_name:
-          maxLength: 64
-          type: string
-        mother_maiden_name:
-          maxLength: 128
-          type: string
-        oper_reference:
-          format: uuid
-          type: string
-        title:
-          nullable: true
-          type: integer
-        title2:
-          nullable: true
-          type: integer
-        user:
-          type: integer
-      required:
-      - id
-      - user
-      type: object
-    ClientUserCrud:
-      properties:
-        away_until:
-          format: date
-          nullable: true
-          type: string
-        date_joined:
-          format: date-time
-          type: string
-        email:
-          format: email
-          maxLength: 254
-          title: Email address
-          type: string
-        enrichment_status:
-          nullable: true
-          type: integer
-        enrichment_status_updated_at:
-          format: date-time
-          nullable: true
-          type: string
-        external_id:
-          maxLength: 64
-          type: string
-        groups:
-          description: The groups this user belongs to. A user will get all permissions granted to each of their groups.
-          items:
-            type: integer
-          type: array
-        id:
-          readOnly: true
-          type: integer
-        is_active:
-          description: Designates whether this user should be treated as active. Unselect this instead of deleting accounts.
-          title: Active
-          type: boolean
-        is_available:
-          type: boolean
-        is_staff:
-          description: Designates whether the user can log into this admin site.
-          title: Staff status
-          type: boolean
-        is_superuser:
-          description: Designates that this user has all permissions without explicitly assigning them.
-          title: Superuser status
-          type: boolean
-        last_language:
-          type: integer
-        last_login:
-          format: date-time
-          nullable: true
-          type: string
-        oper_reference:
-          format: uuid
-          type: string
-        password:
-          type: string
-          writeOnly: true
-        preferred_language:
-          type: integer
-        role:
-          type: integer
-        updated_password_at:
-          format: date-time
-          nullable: true
-          type: string
-        user_permissions:
-          description: Specific permissions for this user.
-          items:
-            type: integer
-          type: array
-        verified:
-          type: boolean
-      required:
-      - email
-      - id
-      - last_language
-      - preferred_language
-      - role
-      type: object
-    PhoneAuto:
-      properties:
-        country_code:
-          type: integer
         id:
           readOnly: true
           type: integer
         value:
-          maxLength: 32
+          format: email
+          maxLength: 254
           type: string
       required:
-      - country_code
       - id
       - value
+      type: object
+    PatchedBankBranchAuto:
+      properties:
+        configuration_id:
+          format: uuid
+          type: string
+        definition:
+          maxLength: 128
+          type: string
+        id:
+          readOnly: true
+          type: integer
+        order:
+          maximum: 2147483647
+          minimum: 0
+          type:
+          - integer
+          - 'null'
       type: object
     PermissionAuto:
       properties:
@@ -2560,121 +3065,6 @@ components:
       - id
       - name
       type: object
-    PatchedProfile2AddressAuto:
-      properties:
-        address:
-          type: integer
-        address_type:
-          type: integer
-        id:
-          readOnly: true
-          type: integer
-        profile:
-          type: integer
-      type: object
-    AddressAuto:
-      properties:
-        box:
-          maxLength: 64
-          type: string
-        building:
-          default: ''
-          maxLength: 64
-          type: string
-        city:
-          maxLength: 64
-          type: string
-        country:
-          nullable: true
-          type: integer
-        floor:
-          maxLength: 64
-          type: string
-        heading:
-          exclusiveMaximum: true
-          exclusiveMinimum: true
-          format: double
-          maximum: 100000
-          minimum: -100000
-          nullable: true
-          type: number
-        house_number:
-          maxLength: 64
-          type: string
-        id:
-          readOnly: true
-          type: integer
-        latitude:
-          exclusiveMaximum: true
-          exclusiveMinimum: true
-          format: double
-          maximum: 100000
-          minimum: -100000
-          nullable: true
-          type: number
-        longitude:
-          exclusiveMaximum: true
-          exclusiveMinimum: true
-          format: double
-          maximum: 100000
-          minimum: -100000
-          nullable: true
-          type: number
-        pitch:
-          exclusiveMaximum: true
-          exclusiveMinimum: true
-          format: double
-          maximum: 100000
-          minimum: -100000
-          nullable: true
-          type: number
-        staircase:
-          default: ''
-          maxLength: 64
-          type: string
-        street:
-          maxLength: 64
-          type: string
-        street_type:
-          nullable: true
-          type: integer
-        zip_code:
-          maxLength: 8
-          type: string
-        zoom:
-          exclusiveMaximum: true
-          exclusiveMinimum: true
-          format: double
-          maximum: 100000
-          minimum: -100000
-          nullable: true
-          type: number
-      required:
-      - box
-      - city
-      - floor
-      - house_number
-      - id
-      - street
-      - zip_code
-      type: object
-    PatchedBankBranchAuto:
-      properties:
-        configuration_id:
-          format: uuid
-          type: string
-        definition:
-          maxLength: 128
-          type: string
-        id:
-          readOnly: true
-          type: integer
-        order:
-          maximum: 2147483647
-          minimum: 0
-          nullable: true
-          type: integer
-      type: object
     Profile2PhoneAuto:
       properties:
         id:
@@ -2694,107 +3084,13 @@ components:
       - phone_type
       - profile
       type: object
-    PatchedAddressAuto:
-      properties:
-        box:
-          maxLength: 64
-          type: string
-        building:
-          default: ''
-          maxLength: 64
-          type: string
-        city:
-          maxLength: 64
-          type: string
-        country:
-          nullable: true
-          type: integer
-        floor:
-          maxLength: 64
-          type: string
-        heading:
-          exclusiveMaximum: true
-          exclusiveMinimum: true
-          format: double
-          maximum: 100000
-          minimum: -100000
-          nullable: true
-          type: number
-        house_number:
-          maxLength: 64
-          type: string
-        id:
-          readOnly: true
-          type: integer
-        latitude:
-          exclusiveMaximum: true
-          exclusiveMinimum: true
-          format: double
-          maximum: 100000
-          minimum: -100000
-          nullable: true
-          type: number
-        longitude:
-          exclusiveMaximum: true
-          exclusiveMinimum: true
-          format: double
-          maximum: 100000
-          minimum: -100000
-          nullable: true
-          type: number
-        pitch:
-          exclusiveMaximum: true
-          exclusiveMinimum: true
-          format: double
-          maximum: 100000
-          minimum: -100000
-          nullable: true
-          type: number
-        staircase:
-          default: ''
-          maxLength: 64
-          type: string
-        street:
-          maxLength: 64
-          type: string
-        street_type:
-          nullable: true
-          type: integer
-        zip_code:
-          maxLength: 8
-          type: string
-        zoom:
-          exclusiveMaximum: true
-          exclusiveMinimum: true
-          format: double
-          maximum: 100000
-          minimum: -100000
-          nullable: true
-          type: number
-      type: object
-    Profile2AddressAuto:
-      properties:
-        address:
-          type: integer
-        address_type:
-          type: integer
-        id:
-          readOnly: true
-          type: integer
-        profile:
-          type: integer
-      required:
-      - address
-      - address_type
-      - id
-      - profile
-      type: object
-    PatchedClientUserCrud:
+    PatchedApplicationUserCrud:
       properties:
         away_until:
           format: date
-          nullable: true
-          type: string
+          type:
+          - string
+          - 'null'
         date_joined:
           format: date-time
           type: string
@@ -2803,13 +3099,17 @@ components:
           maxLength: 254
           title: Email address
           type: string
+        email_task_subscription:
+          type: boolean
         enrichment_status:
-          nullable: true
-          type: integer
+          type:
+          - integer
+          - 'null'
         enrichment_status_updated_at:
           format: date-time
-          nullable: true
-          type: string
+          type:
+          - string
+          - 'null'
         external_id:
           maxLength: 64
           type: string
@@ -2839,8 +3139,9 @@ components:
           type: integer
         last_login:
           format: date-time
-          nullable: true
-          type: string
+          type:
+          - string
+          - 'null'
         oper_reference:
           format: uuid
           type: string
@@ -2853,8 +3154,9 @@ components:
           type: integer
         updated_password_at:
           format: date-time
-          nullable: true
-          type: string
+          type:
+          - string
+          - 'null'
         user_permissions:
           description: Specific permissions for this user.
           items:
@@ -2862,108 +3164,6 @@ components:
           type: array
         verified:
           type: boolean
-      type: object
-    PatchedProfile2PhoneAuto:
-      properties:
-        id:
-          readOnly: true
-          type: integer
-        is_secret:
-          type: boolean
-        phone_number:
-          type: integer
-        phone_type:
-          type: integer
-        profile:
-          type: integer
-      type: object
-    PatchedBaseUserCrud:
-      properties:
-        away_until:
-          format: date
-          nullable: true
-          type: string
-        date_joined:
-          format: date-time
-          type: string
-        email:
-          format: email
-          maxLength: 254
-          title: Email address
-          type: string
-        enrichment_status:
-          nullable: true
-          type: integer
-        enrichment_status_updated_at:
-          format: date-time
-          nullable: true
-          type: string
-        external_id:
-          maxLength: 64
-          type: string
-        groups:
-          description: The groups this user belongs to. A user will get all permissions granted to each of their groups.
-          items:
-            type: integer
-          type: array
-        id:
-          readOnly: true
-          type: integer
-        is_active:
-          description: Designates whether this user should be treated as active. Unselect this instead of deleting accounts.
-          title: Active
-          type: boolean
-        is_available:
-          type: boolean
-        is_staff:
-          description: Designates whether the user can log into this admin site.
-          title: Staff status
-          type: boolean
-        is_superuser:
-          description: Designates that this user has all permissions without explicitly assigning them.
-          title: Superuser status
-          type: boolean
-        last_language:
-          type: integer
-        last_login:
-          format: date-time
-          nullable: true
-          type: string
-        oper_reference:
-          format: uuid
-          type: string
-        password:
-          type: string
-          writeOnly: true
-        preferred_language:
-          type: integer
-        role:
-          type: integer
-        updated_password_at:
-          format: date-time
-          nullable: true
-          type: string
-        user_permissions:
-          description: Specific permissions for this user.
-          items:
-            type: integer
-          type: array
-        verified:
-          type: boolean
-      type: object
-    PatchedPermissionAuto:
-      properties:
-        codename:
-          maxLength: 100
-          type: string
-        content_type:
-          type: integer
-        id:
-          readOnly: true
-          type: integer
-        name:
-          maxLength: 255
-          type: string
       type: object
   securitySchemes:
     jwtAuth:

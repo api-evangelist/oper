@@ -1,7 +1,7 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
-  title: Oper Agent Documents Model Fields API
-  version: "1.0"
+  title: Oper Model Fields API
+  version: ''
 tags:
 - name: Model Fields
 paths:
@@ -15,6 +15,8 @@ paths:
       - jwtAuth: []
       tags:
       - Model Fields
+      summary: Api model fields retrieve
+      x-summary-source: derived
 components:
   securitySchemes:
     jwtAuth:

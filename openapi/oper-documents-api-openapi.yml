@@ -1,7 +1,7 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
-  title: Oper Agent Documents API
-  version: "1.0"
+  title: Oper Documents API
+  version: ''
 tags:
 - name: Documents
 paths:
@@ -32,6 +32,8 @@ paths:
       - jwtAuth: []
       tags:
       - Documents
+      summary: Api documents list
+      x-summary-source: derived
   /api/documents/{id}/:
     delete:
       operationId: api_documents_destroy
@@ -49,8 +51,35 @@ paths:
       - jwtAuth: []
       tags:
       - Documents
+      summary: Api documents destroy
+      x-summary-source: derived
 components:
   schemas:
+    PaginatedBaseDocumentList:
+      properties:
+        count:
+          example: 123
+          type: integer
+        next:
+          example: http://api.example.org/accounts/?page=4
+          format: uri
+          type:
+          - string
+          - 'null'
+        previous:
+          example: http://api.example.org/accounts/?page=2
+          format: uri
+          type:
+          - string
+          - 'null'
+        results:
+          items:
+            $ref: '#/components/schemas/BaseDocument'
+          type: array
+      required:
+      - count
+      - results
+      type: object
     BaseDocument:
       properties:
         external_id:
@@ -71,29 +100,6 @@ components:
       - id
       - object_id
       - status
-      type: object
-    PaginatedBaseDocumentList:
-      properties:
-        count:
-          example: 123
-          type: integer
-        next:
-          example: http://api.example.org/accounts/?page=4
-          format: uri
-          nullable: true
-          type: string
-        previous:
-          example: http://api.example.org/accounts/?page=2
-          format: uri
-          nullable: true
-          type: string
-        results:
-          items:
-            $ref: '#/components/schemas/BaseDocument'
-          type: array
-      required:
-      - count
-      - results
       type: object
   securitySchemes:
     jwtAuth:

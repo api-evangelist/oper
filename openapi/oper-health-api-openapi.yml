@@ -1,7 +1,7 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
-  title: Oper Agent Documents Health API
-  version: "1.0"
+  title: Oper Health API
+  version: ''
 tags:
 - name: Health
 paths:
@@ -16,6 +16,8 @@ paths:
       - jwtAuth: []
       tags:
       - Health
+      summary: Api health retrieve
+      x-summary-source: derived
 components:
   securitySchemes:
     jwtAuth:

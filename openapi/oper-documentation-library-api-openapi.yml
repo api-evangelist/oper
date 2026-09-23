@@ -1,7 +1,7 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
-  title: Oper Agent Documents Documentation Library API
-  version: "1.0"
+  title: Oper Documentation Library API
+  version: ''
 tags:
 - name: Documentation Library
 paths:
@@ -22,6 +22,8 @@ paths:
       - jwtAuth: []
       tags:
       - Documentation Library
+      summary: Api documentation library documents list
+      x-summary-source: derived
     post:
       description: A ViewSet mixin that parametrizes DRF methods over roles
       operationId: api_documentation_library_documents_create
@@ -48,6 +50,8 @@ paths:
       - jwtAuth: []
       tags:
       - Documentation Library
+      summary: Api documentation library documents create
+      x-summary-source: derived
   /api/documentation-library/documents/{id}/:
     get:
       description: A ViewSet mixin that parametrizes DRF methods over roles
@@ -69,6 +73,8 @@ paths:
       - jwtAuth: []
       tags:
       - Documentation Library
+      summary: Api documentation library documents retrieve
+      x-summary-source: derived
     patch:
       description: A ViewSet mixin that parametrizes DRF methods over roles
       operationId: api_documentation_library_documents_partial_update
@@ -100,6 +106,8 @@ paths:
       - jwtAuth: []
       tags:
       - Documentation Library
+      summary: Api documentation library documents partial update
+      x-summary-source: derived
     put:
       description: A ViewSet mixin that parametrizes DRF methods over roles
       operationId: api_documentation_library_documents_update
@@ -132,6 +140,8 @@ paths:
       - jwtAuth: []
       tags:
       - Documentation Library
+      summary: Api documentation library documents update
+      x-summary-source: derived
   /api/documentation-library/documents/{id}/generate-presigned-url-config-panel/:
     get:
       description: A ViewSet mixin that parametrizes DRF methods over roles
@@ -153,6 +163,8 @@ paths:
       - jwtAuth: []
       tags:
       - Documentation Library
+      summary: Api documentation library documents generate presigned url config panel retrieve
+      x-summary-source: derived
   /api/documentation-library/documents/{id}/generate-presigned-url/:
     post:
       description: A ViewSet mixin that parametrizes DRF methods over roles
@@ -186,10 +198,12 @@ paths:
       - jwtAuth: []
       tags:
       - Documentation Library
+      summary: Api documentation library documents generate presigned url create
+      x-summary-source: derived
 components:
   schemas:
-    LibraryDocumentType:
-      description: Can be managed at /resources/library-document-type
+    Language:
+      description: Can be managed at /resources/language
       properties:
         definition:
           type: string
@@ -202,6 +216,62 @@ components:
       - definition
       - id
       - order
+      type: object
+    DocumentationLibrary.LibraryDocument:
+      properties:
+        active:
+          type: boolean
+        base_products:
+          items:
+            type: integer
+          readOnly: true
+          type: array
+        check_function_configuration: {}
+        created:
+          format: date-time
+          readOnly: true
+          title: Creation date and time
+          type: string
+        credit_provider:
+          allOf:
+          - $ref: '#/components/schemas/ReducedCreditProvider'
+        custom_font_name:
+          maxLength: 128
+          type:
+          - string
+          - 'null'
+        data_merge_strategy:
+          type: string
+        data_override_template:
+          type: string
+        document_generation_configuration: {}
+        document_type:
+          $ref: '#/components/schemas/LibraryDocumentType'
+        file:
+          format: uri
+          type: string
+          writeOnly: true
+        file_name:
+          type: string
+        file_path:
+          type: string
+        id:
+          readOnly: true
+          type: integer
+        language:
+          $ref: '#/components/schemas/Language'
+        last_modified:
+          format: date-time
+          readOnly: true
+          title: Modification date and time
+          type: string
+      required:
+      - base_products
+      - created
+      - document_type
+      - id
+      - language
+      - last_modified
       type: object
     PatchedDocumentationLibrary.LibraryDocument:
       properties:
@@ -221,11 +291,11 @@ components:
         credit_provider:
           allOf:
           - $ref: '#/components/schemas/ReducedCreditProvider'
-          nullable: true
         custom_font_name:
           maxLength: 128
-          nullable: true
-          type: string
+          type:
+          - string
+          - 'null'
         data_merge_strategy:
           type: string
         data_override_template:
@@ -283,9 +353,10 @@ components:
         order:
           maximum: 2147483647
           minimum: 0
-          nullable: true
           readOnly: true
-          type: integer
+          type:
+          - integer
+          - 'null'
       required:
       - active
       - fsma_reference
@@ -297,64 +368,8 @@ components:
       - name
       - order
       type: object
-    DocumentationLibrary.LibraryDocument:
-      properties:
-        active:
-          type: boolean
-        base_products:
-          items:
-            type: integer
-          readOnly: true
-          type: array
-        check_function_configuration: {}
-        created:
-          format: date-time
-          readOnly: true
-          title: Creation date and time
-          type: string
-        credit_provider:
-          allOf:
-          - $ref: '#/components/schemas/ReducedCreditProvider'
-          nullable: true
-        custom_font_name:
-          maxLength: 128
-          nullable: true
-          type: string
-        data_merge_strategy:
-          type: string
-        data_override_template:
-          type: string
-        document_generation_configuration: {}
-        document_type:
-          $ref: '#/components/schemas/LibraryDocumentType'
-        file:
-          format: uri
-          type: string
-          writeOnly: true
-        file_name:
-          type: string
-        file_path:
-          type: string
-        id:
-          readOnly: true
-          type: integer
-        language:
-          $ref: '#/components/schemas/Language'
-        last_modified:
-          format: date-time
-          readOnly: true
-          title: Modification date and time
-          type: string
-      required:
-      - base_products
-      - created
-      - document_type
-      - id
-      - language
-      - last_modified
-      type: object
-    Language:
-      description: Can be managed at /resources/language
+    LibraryDocumentType:
+      description: Can be managed at /resources/library-document-type
       properties:
         definition:
           type: string

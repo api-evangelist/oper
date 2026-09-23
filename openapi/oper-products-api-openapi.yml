@@ -1,7 +1,7 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
-  title: Oper Agent Documents Products API
-  version: "1.0"
+  title: Oper Products API
+  version: ''
 tags:
 - name: Products
 paths:
@@ -21,6 +21,8 @@ paths:
       - jwtAuth: []
       tags:
       - Products
+      summary: Api products list
+      x-summary-source: derived
 components:
   schemas:
     StaticProduct:
